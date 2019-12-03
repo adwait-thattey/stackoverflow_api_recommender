@@ -10,7 +10,8 @@ import utils
 def read_questions_segment(segment_id):
     log.log("pickler", f"Reading questions segment {segment_id}")
     questions_dict = None
-    with open(os.path.join(constants.pickled_questions_dir, str(segment_id)), 'rb') as f:
+    with open(os.path.join(constants.pickled_questions_dir, str(segment_id) + constants.pickle_files_extension),
+              'rb') as f:
         questions_dict = pickle.load(f)
 
     if questions_dict is not None:
@@ -23,7 +24,8 @@ def read_questions_segment(segment_id):
 
 def write_questions_segment(segment_id, questions_dict):
     log.log("pickler", f"Writing questions segment {segment_id}")
-    with open(os.path.join(constants.pickled_questions_dir, str(segment_id)), 'wb') as f:
+    with open(os.path.join(constants.pickled_questions_dir, str(segment_id) + constants.pickle_files_extension),
+              'wb') as f:
         pickle.dump(questions_dict, f)
 
 
@@ -92,7 +94,7 @@ def write_questions_index(questions_dict=None):
 def read_question_segment_map():
     log.log("pickler", f" Reading question segment map")
     try:
-        with open(os.path.join(constants.pickled_questions_dir, "qsmap"), 'rb') as f:
+        with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'rb') as f:
             shared.QUESTION_SEGMENT_MAP = pickle.load(f)
     except FileNotFoundError:
         log.warn("pickler", f" Question-Segment Map pickle file not found")
@@ -101,5 +103,5 @@ def read_question_segment_map():
 
 def write_question_segment_map():
     log.log("pickler", f" Writing question segment map")
-    with open(os.path.join(constants.pickled_questions_dir, "qsmap"), 'wb') as f:
+    with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'wb') as f:
         pickle.dump(shared.QUESTION_SEGMENT_MAP, f)
