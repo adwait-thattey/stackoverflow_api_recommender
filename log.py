@@ -21,7 +21,7 @@ def debug(module="-", *args, **kwargs):
     message = " ".join(args)
     messages = message.split('\n')
     for m in messages:
-        print(bcolors.HEADER, end="")
+        print(bcolors.WARNING, end="")
         print('{:20}'.format(f'[DEBUG][{module.upper()}][{r}]'), ': ', end="")
         print(bcolors.ENDC, end="")
         print(m.strip(), end=' ')
@@ -69,7 +69,7 @@ def warn(module="-", *args, **kwargs):
     message = " ".join(args)
     messages = message.split('\n')
     for m in messages:
-        print(bcolors.WARNING, end="")
+        print(bcolors.FAIL, end="")
         print('{:20}'.format(f'[WARN][{module.upper()}][{r}]'), ': ', end="")
         print(bcolors.ENDC, end="")
         print(m.lstrip(), end=' ')
