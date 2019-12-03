@@ -1,0 +1,17 @@
+{
+  "url": "https://stackoverflow.com/questions/6619516/using-filechannel-to-write-any-inputstream",
+  "question": "I know that we can use the containsAll method while comparing two ArrayLists to check if one is a subset of the other. But this is what I would like. Consider an \nArrayList super = 1,2,3,4,5,6,7,8,9,10 \nand an \nArrayList sub1 = 1,2,3,4 \nand another \nArrayList sub2 = 2,4,6,8. \nNow, if I did \nsuper.containsAll(sub1), it would evaluate to true because sub1 is contained within super. \nIf I did super.containsAll(sub2), it would also evaluate to true because the numbers 2,4,6 and 8 are contained in super. \nI would like to know if there's a way to check two ArrayLists so that super.containsAll(sub2) evaluates to false as the numbers in sub2 don't appear in the same order in super."
+  "answers": [
+    "Channels.newChannel(InputStream in)\nhttp://docs.oracle.com/javase/7/docs/api/java/nio/channels/Channels.html",
+    "You can use ReadableByteChannel readableChannel = Channels.newChannel(myinputstream)."
+  ],
+  "api": [
+    "java.nio.channels.channels"
+  ],
+  "tags": [
+    "<java>",
+    "<inputstream>",
+    "<filelock>",
+    "<filechannel>"
+  ]
+}
