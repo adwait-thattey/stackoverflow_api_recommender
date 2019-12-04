@@ -26,3 +26,5 @@ def get_page_soup(url, writeto=None, title=None):
 
 
 
+if __name__ == "__main__":
+    get_page("https://stackoverflow.com/questions/15235400/java-url-param-replace-20-with-space", writeto="./dataset/questions/raw")
