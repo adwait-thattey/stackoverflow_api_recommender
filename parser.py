@@ -12,7 +12,7 @@ def parse_answer(answer_soup: BeautifulSoup):
     if answer_upvote_count_soup:
         upvotes = int(answer_upvote_count_soup['data-value'])
     else:
-        log.log("parser", f" Failed to find upvote count")
+        log.log(f" Failed to find upvote count", module="parser")
 
     outlinks_soup = answer_content_soup.findAll('a', href=True)
     outlinks = [a['href'] for a in outlinks_soup]
@@ -68,7 +68,7 @@ def parse_question_from_file(file):
 
     question = parse_question(soup2)
 
-    log.success("parser", f" question {question.id} parsed")
+    log.success(f" question {question.id} parsed", module="parser")
     return question
 
 

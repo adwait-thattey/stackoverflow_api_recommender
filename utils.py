@@ -29,15 +29,16 @@ def enforce_types(*types, return_type=None):
 
 
 def gen_stopwords():
-    log.log("utils", f"generating Stop Words")
+    log.log(f"generating Stop Words", module="utils")
     try:
         stopwords = nltk.corpus.stopwords
         stop_words = set(stopwords.words('english'))
         shared.STOP_WORDS = stop_words
     except LookupError:
         nltk.download('stopwords')
-        log.log("utils",
-              f"Could not generate stop words. Downloaded the nltk english dataset. \n Recommended to close and run program again \n Press Enter to continue")
+        log.log(
+            f"Could not generate stop words. Downloaded the nltk english dataset. \n Recommended to close and run program again \n Press Enter to continue",
+            module="utils")
         input()
 
 

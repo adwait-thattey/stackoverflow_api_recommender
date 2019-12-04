@@ -8,7 +8,7 @@ import utils
 
 
 def read_questions_segment(segment_id):
-    log.log("pickler", f"Reading questions segment {segment_id}")
+    log.log(f"Reading questions segment {segment_id}", module="pickler")
     questions_dict = None
     with open(os.path.join(constants.pickled_questions_dir, str(segment_id) + constants.pickle_files_extension),
               'rb') as f:
@@ -23,7 +23,7 @@ def read_questions_segment(segment_id):
 
 
 def write_questions_segment(segment_id, questions_dict):
-    log.log("pickler", f"Writing questions segment {segment_id}")
+    log.log(f"Writing questions segment {segment_id}", module="pickler")
     with open(os.path.join(constants.pickled_questions_dir, str(segment_id) + constants.pickle_files_extension),
               'wb') as f:
         pickle.dump(questions_dict, f)
@@ -36,7 +36,7 @@ def write_questions_index(questions_dict=None):
     new_segments = 0
     modified_segments = 0
     pickled = set()
-    log.log("pickler", f"Writing questions index to pickles ")
+    log.log(f"Writing questions index to pickles ", module="pickler")
 
     new_segment_questions_ids = set()
     for ques_id in questions_dict:
@@ -58,7 +58,7 @@ def write_questions_index(questions_dict=None):
                 modified_segments += 1
                 pickled.update(q_seg_ids)
             except FileNotFoundError:
-                log.warn("pickler", f"Segment {segment} in map but does not exist. Removing")
+                log.warn(f"Segment {segment} in map but does not exist. Removing", module="pickler")
                 shared.QUESTION_SEGMENT_MAP = {k: v for (k, v) in shared.QUESTION_SEGMENT_MAP.items() if v != segment}
 
         if ques_id not in shared.QUESTION_SEGMENT_MAP:
@@ -87,21 +87,21 @@ def write_questions_index(questions_dict=None):
 
         new_segment_questions_ids.clear()
 
-    log.log("pickler",
-            f"Questions Written to disk. Modified Segments:{modified_segments},  New Segments:{new_segments}")
+    log.log(f"Questions Written to disk. Modified Segments:{modified_segments},  New Segments:{new_segments}",
+            module="pickler")
 
 
 def read_question_segment_map():
-    log.log("pickler", f" Reading question segment map")
+    log.log(f" Reading question segment map", module="pickler")
     try:
         with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'rb') as f:
             shared.QUESTION_SEGMENT_MAP = pickle.load(f)
     except FileNotFoundError:
-        log.warn("pickler", f" Question-Segment Map pickle file not found")
+        log.warn(f" Question-Segment Map pickle file not found", module="pickler")
         shared.QUESTION_SEGMENT_MAP = dict()
 
 
 def write_question_segment_map():
-    log.log("pickler", f" Writing question segment map")
+    log.log(f" Writing question segment map", module="pickler")
     with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'wb') as f:
         pickle.dump(shared.QUESTION_SEGMENT_MAP, f)

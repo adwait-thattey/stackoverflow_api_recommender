@@ -12,7 +12,7 @@ import constants
 @utils.enforce_types(models.Question)
 def index_question(question: models.Question):
     if question.id in shared.INDEXED_QUESTIONS:
-        log.debug("indexer", f"Question {question.id} already indexed")
+        log.debug(f"Question {question.id} already indexed", module="indexer")
         return
 
     content = preprocessor.preprocess_question_content(question.text)
@@ -36,12 +36,14 @@ if __name__ == "__main__":
     from starter import init, end
 
     init()
-    f1 = "dataset/questions/raw/using-filechannel-to-write-any-inputstream?.html"
+    f1 = "dataset/questions/raw/6619516.html"
     q1 = parser.parse_question_from_file(f1)
     index_question(q1)
 
-    f2 = "dataset/questions/raw/comparing-two-array-lists.html"
+    f2 = "dataset/questions/raw/15796781.html"
+
     q2 = parser.parse_question_from_file(f2)
+    # log.debug(q2.__dict__, module="indexer")
     index_question(q2)
 
     pickler.write_questions_index()

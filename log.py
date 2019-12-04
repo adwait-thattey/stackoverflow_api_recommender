@@ -12,13 +12,14 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 
-def debug(module="-", *args, **kwargs):
+def debug(*args, **kwargs):
+    module = kwargs["module"] if "module" in kwargs else "-"
     r = random.randint(1, 9)
     end = "\n"
     if "end" in kwargs:
         end = kwargs['end']
 
-    message = " ".join(args)
+    message = " ".join([str(arg) for arg in args])
     messages = message.split('\n')
     for m in messages:
         print(bcolors.WARNING, end="")
@@ -28,13 +29,14 @@ def debug(module="-", *args, **kwargs):
     print(end=end)
 
 
-def log(module="-", *args, **kwargs):
+def log(*args, **kwargs):
+    module = kwargs["module"] if "module" in kwargs else "-"
     r = random.randint(1, 9)
     end = "\n"
     if "end" in kwargs:
         end = kwargs['end']
 
-    message = " ".join(args)
+    message = " ".join([str(arg) for arg in args])
     messages = message.split('\n')
     for m in messages:
         print(bcolors.OKBLUE, end="")
@@ -44,13 +46,14 @@ def log(module="-", *args, **kwargs):
     print(end=end)
 
 
-def success(module="-", *args, **kwargs):
+def success(*args, **kwargs):
+    module = kwargs["module"] if "module" in kwargs else "-"
     r = random.randint(1, 9)
     end = "\n"
     if "end" in kwargs:
         end = kwargs['end']
 
-    message = " ".join(args)
+    message = " ".join([str(arg) for arg in args])
     messages = message.split('\n')
     for m in messages:
         print(bcolors.OKGREEN, end="")
@@ -60,13 +63,14 @@ def success(module="-", *args, **kwargs):
     print(end=end)
 
 
-def warn(module="-", *args, **kwargs):
+def warn(*args, **kwargs):
+    module = kwargs["module"] if "module" in kwargs else "-"
     r = random.randint(1, 9)
     end = "\n"
     if "end" in kwargs:
         end = kwargs['end']
 
-    message = " ".join(args)
+    message = " ".join([str(arg) for arg in args])
     messages = message.split('\n')
     for m in messages:
         print(bcolors.FAIL, end="")
@@ -76,13 +80,14 @@ def warn(module="-", *args, **kwargs):
     print(end=end)
 
 
-def fail(module="-", *args, **kwargs):
+def fail(*args, **kwargs):
+    module = kwargs["module"] if "module" in kwargs else "-"
     r = random.randint(1, 9)
     end = "\n"
     if "end" in kwargs:
         end = kwargs['end']
 
-    message = " ".join(args)
+    message = " ".join([str(arg) for arg in args])
     messages = message.split('\n')
     for m in messages:
         print(bcolors.FAIL, end="")

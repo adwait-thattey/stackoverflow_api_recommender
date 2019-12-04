@@ -9,7 +9,7 @@ def init():
         - load question-map from disk
         - init stop words
     """
-    log.log("starter", f"Running init tasks")
+    log.log(f"Running init tasks", module="starter")
     read_question_segment_map()
     gen_stopwords()
 
@@ -20,6 +20,6 @@ def end():
         - write question-segment map to disk
 
     """
-    log.log("starter", f" Running teardown tasks")
+    log.log(f" Running teardown tasks", module="starter")
 
     write_question_segment_map()
