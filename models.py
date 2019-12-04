@@ -186,7 +186,7 @@ class Question:
 
 
 class AnswerIndex:
-    def __init__(self, qid, index):
+    def __init__(self, qid):
         self.ques_id = qid
         self.text = Index()
         self.code = Index()
@@ -196,7 +196,8 @@ class AnswerIndex:
 class QuestionIndex:
     def __init__(self, ques):
         self.id = ques.id
+        self.title_index = Index()
         self.text_index = Index()
         self.code_index = Index()
         self.others_index = Index()
-        self.answers_index = [AnswerIndex(ques.id, ix) for ix in range(len(ques.answers))]
+        self.answers_index = list()
