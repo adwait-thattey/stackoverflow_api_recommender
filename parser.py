@@ -6,6 +6,7 @@ import utils
 
 
 def parse_answer(answer_soup: BeautifulSoup):
+    answer_soup.pre
     answer_content_soup = answer_soup.find('div', attrs={'class': 'post-text'})
     answer_upvote_count_soup = answer_soup.find('div', attrs={'itemprop': 'upvoteCount'})
     upvotes = 0
@@ -17,6 +18,7 @@ def parse_answer(answer_soup: BeautifulSoup):
     outlinks_soup = answer_content_soup.findAll('a', href=True)
     outlinks = [a['href'] for a in outlinks_soup]
 
+    [ol.replaceWith('') for ol in outlinks_soup]
     code_snippets_soups = answer_content_soup.findAll('code')
     code_snippets_texts = [code.text for code in code_snippets_soups]
 
@@ -51,7 +53,6 @@ def parse_question(page_soup: BeautifulSoup):
     answer_soups = page_soup.findAll('div', attrs={'class': 'answer'})
     answers = [parse_answer(ans) for ans in answer_soups]
     answers.sort(key=lambda a: a.upvotes, reverse=True)
-
     question_object = models.Question(url="", title=qtitle, question_id=question_id, text=question_text,
                                       code_snippets=question_code_snippets_text,
                                       out_links=outlinks, answers=answers, lang="java")
@@ -73,6 +74,6 @@ def parse_question_from_file(file):
 
 
 if __name__ == "__main__":
-    file = "dataset/questions/raw/using-filechannel-to-write-any-inputstream?.html"
+    file = "./dataset/questions/raw/15235400.html"
     q = parse_question_from_file(file)
-    print(q.to_json())
+    log.debug(q.to_json())

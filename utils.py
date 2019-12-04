@@ -47,7 +47,7 @@ def get_new_question_segment_id():
                  os.path.isfile(os.path.join(constants.pickled_questions_dir, f))]
 
     start = 1
-    while str(start) in file_list:
+    while f"{str(start)}{constants.pickle_files_extension}" in file_list:
         start += 1
 
     return start
