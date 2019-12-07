@@ -5,13 +5,16 @@ Then removes special characters and everything within brackets
 """
 import os
 
+import log
 import shared
 import constants
 from unidecode import unidecode
 from string import punctuation
 from collections import OrderedDict
+from nltk.stem.porter import PorterStemmer
 
 DOC_DIR_PATH = ""
+stemmer = PorterStemmer()
 
 
 def remove_enclosed_content(line):
@@ -59,13 +62,27 @@ def break_multiple_lines(line):
     return ret_lines
 
 
-def process_word(word: str):
+def process_text_word(word: str):
     # if word.isdigit() or not word.isalnum():
     #     return constants.null_word
     word = word.lower()
 
     if word in shared.STOP_WORDS:
         return ""
+
+    stemmed_word = stemmer.stem(word)
+
+    if stemmed_word != word:
+        # log.debug(f"Stemmed {word} to {stemmed_word}", module="preprocessor")
+        pass
+
+    word = stemmed_word # comment this to remove stemming
+    return word
+
+
+def process_code_word(word: str):
+    # if word.isdigit() or not word.isalnum():
+    #     return constants.null_word
 
     return word
 
@@ -97,17 +114,34 @@ def process_line(line):
     line = line.strip().strip('.').strip()
     line = replace_special_meaning_symbols(line)
     line = "".join([c if c not in constants.question_replaceable_special_characters else ' ' for c in line])
-    words = [process_word(w) for w in line.split()]
+    words = [process_text_word(w) for w in line.split()]
     line = " ".join([w for w in words if w])
-    line = line.replace("  ", " ")  # remove duplicate spaces
+    # line = line.replace("  ", " ")  # remove duplicate spaces
+    words = [w for w in words if w]
+    return words
 
-    return line
+
+def process_code_line(code_line):
+    line = unidecode(code_line)
+
+    line = "".join([c if c not in constants.code_replaceable_special_characters else ' ' for c in line])
+    words = [process_code_word(w) for w in line.split()]
+    return ([w for w in words if w])
 
 
-def preprocess_question_content(content):
+def preprocess_question_content(content: str):
     lines = break_multiple_lines(content)
-    processed_lines = [process_line(l) for l in lines]
-    return " ".join([l for l in processed_lines if l])
+    bag_of_words = list()
+    [bag_of_words.extend(process_line(l)) for l in lines]
+    return bag_of_words
+
+
+def preprocess_code_snippet(snippet):
+    lines = snippet.split('\n')
+    bag_of_words = list()
+    [bag_of_words.extend(process_code_line(l)) for l in lines]
+
+    return bag_of_words
 
 
 if __name__ == "__main__":

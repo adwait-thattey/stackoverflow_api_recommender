@@ -91,17 +91,63 @@ def write_questions_index(questions_dict=None):
             module="pickler")
 
 
-def read_question_segment_map():
+def read_shared_data():
     log.log(f" Reading question segment map", module="pickler")
     try:
         with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'rb') as f:
             shared.QUESTION_SEGMENT_MAP = pickle.load(f)
+
+        log.log("Reading Total Counts")
+        try:
+            with open(os.path.join(constants.pickle_data_dir, "counts" + constants.pickle_files_extension), 'rb') as f2:
+                counts = pickle.load(f2)
+                shared.TOTAL_QUESTIONS = counts['TOTAL_QUESTIONS']
+                shared.TOTAL_ANSWERS = counts['TOTAL_ANSWERS']
+                shared.TOTAL_API_DOCS = counts['TOTAL_API_DOCS']
+                shared.TOTAL_API_METHODS = counts['TOTAL_API_METHODS']
+        except FileNotFoundError:
+            log.fail(
+                "The question-seg map pickle exists but total_counts does not. This will lead to inconsistencies in IDF. Delete the seg map ",
+                module="pickler")
+            exit()
     except FileNotFoundError:
         log.warn(f" Question-Segment Map pickle file not found", module="pickler")
         shared.QUESTION_SEGMENT_MAP = dict()
 
 
-def write_question_segment_map():
+def write_shared_data():
     log.log(f" Writing question segment map", module="pickler")
     with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'wb') as f:
         pickle.dump(shared.QUESTION_SEGMENT_MAP, f)
+
+    count = {
+        "TOTAL_QUESTIONS": shared.TOTAL_QUESTIONS,
+        "TOTAL_ANSWERS": shared.TOTAL_ANSWERS,
+        "TOTAL_API_DOCS": shared.TOTAL_API_DOCS,
+        "TOTAL_API_METHODS": shared.TOTAL_API_METHODS
+    }
+    log.log("Writing total counts")
+    with open(os.path.join(constants.pickle_data_dir, "counts" + constants.pickle_files_extension), 'wb') as f:
+        pickle.dump(count, f)
+
+
+def write_tdf_idf():
+    log.log(f" Writing TDF-IDF pickles", module="pickler")
+    with open(os.path.join(constants.pickle_data_dir, "tdf" + constants.pickle_files_extension), 'wb') as f:
+        pickle.dump(shared.TERM_DOCUMENT_FREQUENCY, f)
+
+    with open(os.path.join(constants.pickle_data_dir, "idf" + constants.pickle_files_extension), 'wb') as f:
+        pickle.dump(shared.INVERSE_DOCUMENT_FREQUENCY, f)
+
+
+def read_tdf_idf():
+    log.log(f" Reading TDF-IDF Pickles", module="pickler")
+    try:
+        with open(os.path.join(constants.pickle_data_dir, "tdf" + constants.pickle_files_extension), 'rb') as f:
+            shared.TERM_DOCUMENT_FREQUENCY = pickle.load(f)
+
+        with open(os.path.join(constants.pickle_data_dir, "idf" + constants.pickle_files_extension), 'rb') as f:
+            shared.INVERSE_DOCUMENT_FREQUENCY = pickle.load(f)
+
+    except FileNotFoundError:
+        log.warn(f"tdf-idf pickle files not found", module="pickler")
