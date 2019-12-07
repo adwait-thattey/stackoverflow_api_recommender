@@ -58,6 +58,98 @@ def parse_question(page_soup: BeautifulSoup):
 
     return question_object
 
+def parse_API_doc(doc_soup: BeautifulSoup):
+
+    class_name = doc_soup.find('h2',attrs={'class':'title'}).text
+    # print(class_name)
+    module_div = doc_soup.find('span',attrs={'class':'moduleLabelInType'}).parent
+    module_name = module_div.find('a').text
+    # print("Module name "+str(module_name))
+
+    package_div = doc_soup.find('span',attrs={'class':'packageLabelInType'}).parent
+    package_name = package_div.find('a').text
+    # print("Package" + str(package_name))
+
+    description_div = doc_soup.find('div',attrs={'class':'description'})
+    method_signature = description_div.find('pre').text
+    # print("method signature" + str(method_signature))
+
+    description = description_div.find('div',attrs={'class':'block'}).text
+    # print("Description" + str(description))
+
+    apiDocObject = models.APIDoc(name=class_name, module=module_name, package=package_name, doc_text=description,
+                                code_snippets=[method_signature], lang="java")
+
+    # if(doc_soup.find('a',attrs={'id':'field.summary'})):
+    #     fields_table = doc_soup.find('a',attrs={'id':'field.summary'}).parent.findAll('tr')[1:]
+    #     for row in fields_table:
+    #         fieldname = row.find('td',attrs={'class':'colFirst'}).text
+    #         field_sig = row.find('th',attrs={'class':'colSecond'}).text
+    #         desc = row.find('td',attrs={'class':'colLast'}).text
+    #
+    #         print(fieldname)
+    #         apiDocObject.add_field(field_name=fieldname, field_signature=field_sig, description=desc)
+
+
+    # if(doc_soup.find('a',attrs={'id':'method.summary'})):
+    #     methods_table = doc_soup.find('a',attrs={'id':'method.summary'}).parent.findAll('tr')[1:]
+    #     print(len(methods_table))
+    #     for row in methods_table:
+    #         # print(row)
+    #         method_name = row.find('td',attrs={'class':'colFirst'}).text
+    #         method_sig = row.find('th',attrs={'class':'colSecond'}).text
+    #         desc = row.find('td',attrs={'class':'colLast'}).text
+    #
+    #         print(method_sig)
+    #         apiDocObject.add_method(method_name=method_name, method_signature=method_sig, description=desc)
+
+    if(doc_soup.find('a',attrs={'id':'method.detail'})):
+        print('Fetching method details')
+        method_details = doc_soup.find('a',attrs={'id':'method.detail'}).parent.findAll('ul',attrs={'class':'blockList'})
+        # print(method_details)
+        for row in method_details:
+            # print(row)
+            method_name = row.find('h4').text
+            method_sig = row.find('pre',attrs={'class':'methodSignature'}).text
+            desc = row.find('div',attrs={'class':'block'}).text
+            print(method_sig)
+            apiDocObject.add_method(method_name=method_name, method_signature=method_sig, description=desc)
+
+        last_detail = doc_soup.find('a',attrs={'id':'method.detail'}).parent.find('ul',attrs={'class':'blockListLast'})
+        # print(last_detail)
+        method_name = last_detail.find('h4').text
+        method_sig = last_detail.find('pre',attrs={'class':'methodSignature'}).text
+        desc = last_detail.find('div',attrs={'class':'block'}).text
+        print(method_sig)
+        apiDocObject.add_method(method_name=method_name, method_signature=method_sig, description=desc)
+
+    print('\n---------')
+
+    if(doc_soup.find('a',attrs={'id':'field.detail'})):
+        print('Fetching field details')
+        field_details = doc_soup.find('a',attrs={'id':'field.detail'}).parent.findAll('ul',attrs={'class':'blockList'})
+        # print(method_details)
+        for row in field_details:
+            print(row)
+            field_name = row.find('h4').text
+            field_sig = row.find('pre',attrs={'class':'fieldSignature'}).text
+            desc = row.find('div',attrs={'class':'block'}).text
+            apiDocObject.add_field(field_name=field_name, field_signature=field_sig, description=desc)
+            print(desc)
+
+        last_detail = doc_soup.find('a',attrs={'id':'field.detail'}).parent.find('ul',attrs={'class':'blockListLast'})
+        # print(last_detail)
+        field_name = last_detail.find('h4').text
+        field_sig = last_detail.find('pre').text
+        desc = last_detail.find('div',attrs={'class':'block'}).text
+        print(field_sig)
+        print(desc)
+        apiDocObject.add_field(field_name=field_name, field_signature=field_sig, description=desc)
+    #
+
+    return apiDocObject
+
+
 
 def parse_question_from_file(file):
     f = open(file, mode="r")
@@ -71,8 +163,35 @@ def parse_question_from_file(file):
     log.success(f" question {question.id} parsed", module="parser")
     return question
 
+def parse_API_doc_driver(file):
+    f = open(file,mode='r')
+    doc_raw = f.read()
+    f.close()
+
+    soupObject = BeautifulSoup(doc_raw,'html.parser')
+    parsedDoc = parse_API_doc(soupObject)
+
+    # print(parsedDoc.__dict__)
+    # jsonified = parsedDoc.to_json()
+    # obj = models.APIDoc.from_json(jsonified)
+    # print(obj.__dict__)
+
+    log.success(f" Document {parsedDoc.name} parsed", module="parser")
+    return parsedDoc
+
+def test_method():
+
+    method = models.APIField('testname','testsignature','testdesc')
+    print(method.__dict__)
+    jsonified = method.to_json()
+    obj = models.APIField.from_json(jsonified)
+    print(obj.__dict__)
 
 if __name__ == "__main__":
     file = "dataset/questions/raw/using-filechannel-to-write-any-inputstream?.html"
-    q = parse_question_from_file(file)
-    print(q.to_json())
+    # q = parse_question_from_file(file)
+    parse_API_doc_driver('dataset/API/raw/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html')
+
+    # print(q.to_json())
+
+    # test_method()
