@@ -1,0 +1,1 @@
+{"name": "Class KeyException", "module": "java.base", "package": "java.security", "text": "This is the basic key exception.", "codes": ["public class KeyException\nextends GeneralSecurityException"], "fields": [], "methods": []}

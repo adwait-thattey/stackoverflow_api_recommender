@@ -1,0 +1,1 @@
+{"name": "Class LocalExecutionControl", "module": "jdk.jshell", "package": "jdk.jshell.execution", "text": "An implementation of ExecutionControl which executes\n in the same JVM as the JShell-core.", "codes": ["public class LocalExecutionControl\nextends DirectExecutionControl"], "fields": [], "methods": []}

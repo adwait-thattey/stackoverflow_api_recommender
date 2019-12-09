@@ -1,0 +1,1 @@
+{"name": "Annotation Type Enabled", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event annotation, determines if an event should be enabled by default.\n \n If an event doesn't have the annotation, then by default the event is enabled.", "codes": ["@Target(TYPE)\n@Retention(RUNTIME)\n@Inherited\npublic @interface Enabled"], "fields": [], "methods": []}

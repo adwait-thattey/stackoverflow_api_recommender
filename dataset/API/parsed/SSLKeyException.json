@@ -1,0 +1,1 @@
+{"name": "Class SSLKeyException", "module": "java.base", "package": "javax.net.ssl", "text": "Reports a bad SSL key.  Normally, this indicates misconfiguration\n of the server or client SSL certificate and private key.", "codes": ["public class SSLKeyException\nextends SSLException"], "fields": [], "methods": []}

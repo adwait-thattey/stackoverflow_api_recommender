@@ -1,0 +1,1 @@
+{"name": "Class SeparatorUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JSeparator.", "codes": ["public abstract class SeparatorUI\nextends ComponentUI"], "fields": [], "methods": []}

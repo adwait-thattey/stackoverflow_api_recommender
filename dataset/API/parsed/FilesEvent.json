@@ -1,0 +1,1 @@
+{"name": "Class FilesEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Auxiliary event containing a list of files.", "codes": ["public class FilesEvent\nextends AppEvent"], "fields": [], "methods": [{"method_name": "getFiles", "method_sig": "public List<File> getFiles()", "description": "Gets the list of files."}]}

@@ -1,0 +1,1 @@
+{"name": "Class PreferencesEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the application is asked to open its preferences window.", "codes": ["public final class PreferencesEvent\nextends AppEvent"], "fields": [], "methods": []}

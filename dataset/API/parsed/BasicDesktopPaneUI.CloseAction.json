@@ -1,0 +1,1 @@
+{"name": "Class BasicDesktopPaneUI.CloseAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Handles closing an internal frame.", "codes": ["protected class BasicDesktopPaneUI.CloseAction\nextends AbstractAction"], "fields": [], "methods": []}

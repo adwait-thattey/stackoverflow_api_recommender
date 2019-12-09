@@ -1,0 +1,1 @@
+{"name": "Class ExemptionMechanismException", "module": "java.base", "package": "javax.crypto", "text": "This is the generic ExemptionMechanism exception.", "codes": ["public class ExemptionMechanismException\nextends GeneralSecurityException"], "fields": [], "methods": []}

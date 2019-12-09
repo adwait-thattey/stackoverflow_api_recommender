@@ -1,0 +1,1 @@
+{"name": "Class UnsatisfiedLinkError", "module": "java.base", "package": "java.lang", "text": "Thrown if the Java Virtual Machine cannot find an appropriate\n native-language definition of a method declared native.", "codes": ["public class UnsatisfiedLinkError\nextends LinkageError"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Interface MouseInputListener", "module": "java.desktop", "package": "javax.swing.event", "text": "A listener implementing all the methods in both the MouseListener and\n MouseMotionListener interfaces.", "codes": ["public interface MouseInputListener\nextends MouseListener, MouseMotionListener"], "fields": [], "methods": []}

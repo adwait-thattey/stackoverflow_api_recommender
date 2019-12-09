@@ -1,0 +1,1 @@
+{"name": "Class ZipError", "module": "java.base", "package": "java.util.zip", "text": "Signals that an unrecoverable error has occurred.", "codes": ["public class ZipError\nextends InternalError"], "fields": [], "methods": []}

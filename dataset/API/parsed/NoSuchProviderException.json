@@ -1,0 +1,1 @@
+{"name": "Class NoSuchProviderException", "module": "java.base", "package": "java.security", "text": "This exception is thrown when a particular security provider is\n requested but is not available in the environment.", "codes": ["public class NoSuchProviderException\nextends GeneralSecurityException"], "fields": [], "methods": []}

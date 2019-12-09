@@ -1,0 +1,1 @@
+{"name": "Class ScrollBarUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JScrollBar.", "codes": ["public abstract class ScrollBarUI\nextends ComponentUI"], "fields": [], "methods": []}

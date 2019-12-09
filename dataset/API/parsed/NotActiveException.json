@@ -1,0 +1,1 @@
+{"name": "Class NotActiveException", "module": "java.base", "package": "java.io", "text": "Thrown when serialization or deserialization is not active.", "codes": ["public class NotActiveException\nextends ObjectStreamException"], "fields": [], "methods": []}

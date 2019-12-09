@@ -1,0 +1,1 @@
+{"name": "Class ServiceConfigurationError", "module": "java.base", "package": "java.util", "text": "Error thrown when something goes wrong while locating, loading, or\n instantiating a service provider.", "codes": ["public class ServiceConfigurationError\nextends Error"], "fields": [], "methods": []}

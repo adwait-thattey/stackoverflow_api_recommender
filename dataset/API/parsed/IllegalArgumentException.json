@@ -1,0 +1,1 @@
+{"name": "Class IllegalArgumentException", "module": "java.base", "package": "java.lang", "text": "Thrown to indicate that a method has been passed an illegal or\n inappropriate argument.", "codes": ["public class IllegalArgumentException\nextends RuntimeException"], "fields": [], "methods": []}

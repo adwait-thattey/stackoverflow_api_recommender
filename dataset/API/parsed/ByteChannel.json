@@ -1,0 +1,1 @@
+{"name": "Interface ByteChannel", "module": "java.base", "package": "java.nio.channels", "text": "A channel that can read and write bytes.  This interface simply unifies\n ReadableByteChannel and WritableByteChannel; it does not\n specify any new operations.", "codes": ["public interface ByteChannel\nextends ReadableByteChannel, WritableByteChannel"], "fields": [], "methods": []}

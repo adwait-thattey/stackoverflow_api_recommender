@@ -1,0 +1,1 @@
+{"name": "Class BasicBorders.RadioButtonBorder", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Draws the border around a radio button.", "codes": ["public static class BasicBorders.RadioButtonBorder\nextends BasicBorders.ButtonBorder"], "fields": [], "methods": []}

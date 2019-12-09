@@ -1,0 +1,1 @@
+{"name": "Class AWTError", "module": "java.desktop", "package": "java.awt", "text": "Thrown when a serious Abstract Window Toolkit error has occurred.", "codes": ["public class AWTError\nextends Error"], "fields": [], "methods": []}

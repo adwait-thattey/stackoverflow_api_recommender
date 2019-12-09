@@ -1,0 +1,1 @@
+{"name": "Class RelationNotFoundException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when there is no relation for a given relation id\n in a Relation Service.", "codes": ["public class RelationNotFoundException\nextends RelationException"], "fields": [], "methods": []}

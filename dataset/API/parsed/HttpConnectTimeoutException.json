@@ -1,0 +1,1 @@
+{"name": "Class HttpConnectTimeoutException", "module": "java.net.http", "package": "java.net.http", "text": "Thrown when a connection, over which an HttpRequest is intended to be\n sent, is not successfully established within a specified time period.", "codes": ["public class HttpConnectTimeoutException\nextends HttpTimeoutException"], "fields": [], "methods": []}

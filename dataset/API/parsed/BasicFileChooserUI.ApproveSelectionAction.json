@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.ApproveSelectionAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Responds to an Open or Save request", "codes": ["protected class BasicFileChooserUI.ApproveSelectionAction\nextends AbstractAction"], "fields": [], "methods": []}

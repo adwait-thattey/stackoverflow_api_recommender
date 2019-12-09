@@ -1,0 +1,1 @@
+{"name": "Class CharacterCodingException", "module": "java.base", "package": "java.nio.charset", "text": "Checked exception thrown when a character encoding\n or decoding error occurs.", "codes": ["public class CharacterCodingException\nextends IOException"], "fields": [], "methods": []}

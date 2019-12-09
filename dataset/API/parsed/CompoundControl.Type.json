@@ -1,0 +1,1 @@
+{"name": "Class CompoundControl.Type", "module": "java.desktop", "package": "javax.sound.sampled", "text": "An instance of the CompoundControl.Type inner class identifies\n one kind of compound control.", "codes": ["public static class CompoundControl.Type\nextends Control.Type"], "fields": [], "methods": []}

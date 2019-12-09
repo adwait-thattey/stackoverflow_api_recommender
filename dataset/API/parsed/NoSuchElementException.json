@@ -1,0 +1,1 @@
+{"name": "Class NoSuchElementException", "module": "java.base", "package": "java.util", "text": "Thrown by various accessor methods to indicate that the element being requested\n does not exist.", "codes": ["public class NoSuchElementException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class TransformerConfigurationException", "module": "java.xml", "package": "javax.xml.transform", "text": "Indicates a serious configuration error.", "codes": ["public class TransformerConfigurationException\nextends TransformerException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class IllegalBlockSizeException", "module": "java.base", "package": "javax.crypto", "text": "This exception is thrown when the length of data provided to a block\n cipher is incorrect, i.e., does not match the block size of the cipher.", "codes": ["public class IllegalBlockSizeException\nextends GeneralSecurityException"], "fields": [], "methods": []}

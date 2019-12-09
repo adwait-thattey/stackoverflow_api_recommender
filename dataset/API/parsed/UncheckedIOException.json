@@ -1,0 +1,1 @@
+{"name": "Class UncheckedIOException", "module": "java.base", "package": "java.io", "text": "Wraps an IOException with an unchecked exception.", "codes": ["public class UncheckedIOException\nextends RuntimeException"], "fields": [], "methods": [{"method_name": "getCause", "method_sig": "public IOException getCause()", "description": "Returns the cause of this exception."}]}

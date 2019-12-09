@@ -1,0 +1,1 @@
+{"name": "Class InvalidRoleInfoException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when, in a role info, its minimum degree is greater\n than its maximum degree.", "codes": ["public class InvalidRoleInfoException\nextends RelationException"], "fields": [], "methods": []}

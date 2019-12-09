@@ -1,0 +1,1 @@
+{"name": "Class ViewportUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JViewport.", "codes": ["public abstract class ViewportUI\nextends ComponentUI"], "fields": [], "methods": []}

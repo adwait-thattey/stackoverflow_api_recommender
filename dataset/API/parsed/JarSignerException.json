@@ -1,0 +1,1 @@
+{"name": "Class JarSignerException", "module": "jdk.jartool", "package": "jdk.security.jarsigner", "text": "This exception is thrown when JarSigner.sign(java.util.zip.ZipFile, java.io.OutputStream) fails.", "codes": ["public class JarSignerException\nextends RuntimeException"], "fields": [], "methods": []}

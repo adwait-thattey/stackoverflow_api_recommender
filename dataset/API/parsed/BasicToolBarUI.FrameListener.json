@@ -1,0 +1,1 @@
+{"name": "Class BasicToolBarUI.FrameListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "The class listens for window events.", "codes": ["protected class BasicToolBarUI.FrameListener\nextends WindowAdapter"], "fields": [], "methods": []}

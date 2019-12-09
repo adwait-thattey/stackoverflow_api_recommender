@@ -1,0 +1,1 @@
+{"name": "Class AppReopenedEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the application is asked to re-open itself.", "codes": ["public final class AppReopenedEvent\nextends AppEvent"], "fields": [], "methods": []}

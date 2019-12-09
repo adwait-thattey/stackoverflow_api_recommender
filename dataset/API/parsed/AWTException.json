@@ -1,0 +1,1 @@
+{"name": "Class AWTException", "module": "java.desktop", "package": "java.awt", "text": "Signals that an Abstract Window Toolkit exception has occurred.", "codes": ["public class AWTException\nextends Exception"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class AEADBadTagException", "module": "java.base", "package": "javax.crypto", "text": "This exception is thrown when a Cipher operating in\n an AEAD mode (such as GCM/CCM) is unable to verify the supplied\n authentication tag.", "codes": ["public class AEADBadTagException\nextends BadPaddingException"], "fields": [], "methods": []}

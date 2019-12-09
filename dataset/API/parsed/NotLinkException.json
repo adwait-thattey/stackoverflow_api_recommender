@@ -1,0 +1,1 @@
+{"name": "Class NotLinkException", "module": "java.base", "package": "java.nio.file", "text": "Checked exception thrown when a file system operation fails because a file\n is not a symbolic link.", "codes": ["public class NotLinkException\nextends FileSystemException"], "fields": [], "methods": []}

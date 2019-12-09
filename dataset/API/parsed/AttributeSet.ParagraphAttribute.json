@@ -1,0 +1,1 @@
+{"name": "Interface AttributeSet.ParagraphAttribute", "module": "java.desktop", "package": "javax.swing.text", "text": "This interface is the type signature that is expected\n to be present on any attribute key that contributes to\n the paragraph level presentation.", "codes": ["public static interface AttributeSet.ParagraphAttribute"], "fields": [], "methods": []}

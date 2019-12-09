@@ -1,0 +1,1 @@
+{"name": "Class CharConversionException", "module": "java.base", "package": "java.io", "text": "Base class for character conversion exceptions.", "codes": ["public class CharConversionException\nextends IOException"], "fields": [], "methods": []}

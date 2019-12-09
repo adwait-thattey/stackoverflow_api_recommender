@@ -1,0 +1,1 @@
+{"name": "Class AlreadyConnectedException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to connect a SocketChannel that is already connected.", "codes": ["public class AlreadyConnectedException\nextends IllegalStateException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class BasicBorders.MarginBorder", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Draws the border around components which support margins.", "codes": ["public static class BasicBorders.MarginBorder\nextends AbstractBorder\nimplements UIResource"], "fields": [], "methods": []}

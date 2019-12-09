@@ -1,0 +1,1 @@
+{"name": "Class ButtonUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JButton.", "codes": ["public abstract class ButtonUI\nextends ComponentUI"], "fields": [], "methods": []}

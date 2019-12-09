@@ -1,0 +1,1 @@
+{"name": "Interface SctpSocketOption<T>", "module": "jdk.sctp", "package": "com.sun.nio.sctp", "text": "A socket option associated with an SCTP channel.", "codes": ["public interface SctpSocketOption<T>\nextends SocketOption<T>"], "fields": [], "methods": []}

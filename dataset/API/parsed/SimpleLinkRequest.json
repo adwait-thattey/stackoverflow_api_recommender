@@ -1,0 +1,1 @@
+{"name": "Class SimpleLinkRequest", "module": "jdk.dynalink", "package": "jdk.dynalink.linker.support", "text": "Default simple implementation of LinkRequest.", "codes": ["public class SimpleLinkRequest\nextends Object\nimplements LinkRequest"], "fields": [], "methods": []}

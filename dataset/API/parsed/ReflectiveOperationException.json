@@ -1,0 +1,1 @@
+{"name": "Class ReflectiveOperationException", "module": "java.base", "package": "java.lang", "text": "Common superclass of exceptions thrown by reflective operations in\n core reflection.", "codes": ["public class ReflectiveOperationException\nextends Exception"], "fields": [], "methods": []}

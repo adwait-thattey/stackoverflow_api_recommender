@@ -1,0 +1,1 @@
+{"name": "Class JSException", "module": "jdk.jsobject", "package": "netscape.javascript", "text": "Thrown when an exception is raised in the JavaScript engine. This is merely\n a marker class to indicate an exception relating to the JavaScript\n interface.", "codes": ["public class JSException\nextends RuntimeException"], "fields": [], "methods": []}

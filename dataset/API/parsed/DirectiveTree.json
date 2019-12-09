@@ -1,0 +1,1 @@
+{"name": "Interface DirectiveTree", "module": "jdk.compiler", "package": "com.sun.source.tree", "text": "A super-type for all the directives in a ModuleTree.", "codes": ["public interface DirectiveTree\nextends Tree"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class PrintFilesEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the app is asked to print a list of files.", "codes": ["public final class PrintFilesEvent\nextends FilesEvent"], "fields": [], "methods": []}

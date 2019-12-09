@@ -1,0 +1,1 @@
+{"name": "Interface AttributeSet.ColorAttribute", "module": "java.desktop", "package": "javax.swing.text", "text": "This interface is the type signature that is expected\n to be present on any attribute key that contributes to\n presentation of color.", "codes": ["public static interface AttributeSet.ColorAttribute"], "fields": [], "methods": []}

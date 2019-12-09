@@ -1,0 +1,1 @@
+{"name": "Class ExecutionControl.RunException", "module": "jdk.jshell", "package": "jdk.jshell.spi", "text": "The abstract base of of exceptions specific to running user code.", "codes": ["public abstract static class ExecutionControl.RunException\nextends ExecutionControl.ExecutionControlException"], "fields": [], "methods": []}

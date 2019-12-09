@@ -1,0 +1,1 @@
+{"name": "Class NoSuchPaddingException", "module": "java.base", "package": "javax.crypto", "text": "This exception is thrown when a particular padding mechanism is\n requested but is not available in the environment.", "codes": ["public class NoSuchPaddingException\nextends GeneralSecurityException"], "fields": [], "methods": []}

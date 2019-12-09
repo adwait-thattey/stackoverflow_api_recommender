@@ -1,0 +1,1 @@
+{"name": "Class ECGenParameterSpec", "module": "java.base", "package": "java.security.spec", "text": "This immutable class specifies the set of parameters used for\n generating elliptic curve (EC) domain parameters.", "codes": ["public class ECGenParameterSpec\nextends NamedParameterSpec"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class MetalBorders.ToolBarBorder", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "The class represents the border of a JToolBar.", "codes": ["public static class MetalBorders.ToolBarBorder\nextends AbstractBorder\nimplements UIResource, SwingConstants"], "fields": [], "methods": []}

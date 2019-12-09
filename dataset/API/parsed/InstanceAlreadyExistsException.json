@@ -1,0 +1,1 @@
+{"name": "Class InstanceAlreadyExistsException", "module": "java.management", "package": "javax.management", "text": "The MBean is already registered in the repository.", "codes": ["public class InstanceAlreadyExistsException\nextends OperationsException"], "fields": [], "methods": []}

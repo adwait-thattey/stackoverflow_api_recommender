@@ -1,0 +1,1 @@
+{"name": "Annotation Type Threshold", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event annotation, specifies the default duration below which an event is not\n recorded (for example, \"20 ms\").", "codes": ["@Target(TYPE)\n@Inherited\n@Retention(RUNTIME)\npublic @interface Threshold"], "fields": [], "methods": []}

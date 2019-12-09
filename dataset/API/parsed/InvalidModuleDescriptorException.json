@@ -1,0 +1,1 @@
+{"name": "Class InvalidModuleDescriptorException", "module": "java.base", "package": "java.lang.module", "text": "Thrown when reading a module descriptor and the module descriptor is found\n to be malformed or otherwise cannot be interpreted as a module descriptor.", "codes": ["public class InvalidModuleDescriptorException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class NativeMethodException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate an operation cannot be completed because\n it is not valid for a native method.", "codes": ["public class NativeMethodException\nextends RuntimeException"], "fields": [], "methods": []}

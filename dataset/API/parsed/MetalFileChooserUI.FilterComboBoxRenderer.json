@@ -1,0 +1,1 @@
+{"name": "Class MetalFileChooserUI.FilterComboBoxRenderer", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "Render different type sizes and styles.", "codes": ["public class MetalFileChooserUI.FilterComboBoxRenderer\nextends DefaultListCellRenderer"], "fields": [], "methods": []}

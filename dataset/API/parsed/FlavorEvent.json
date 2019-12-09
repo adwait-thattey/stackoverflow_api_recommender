@@ -1,0 +1,1 @@
+{"name": "Class FlavorEvent", "module": "java.datatransfer", "package": "java.awt.datatransfer", "text": "FlavorEvent is used to notify interested parties that available\n DataFlavors have changed in the Clipboard (the event source).", "codes": ["public class FlavorEvent\nextends EventObject"], "fields": [], "methods": []}

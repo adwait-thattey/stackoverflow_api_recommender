@@ -1,0 +1,1 @@
+{"name": "Class ImagingOpException", "module": "java.desktop", "package": "java.awt.image", "text": "The ImagingOpException is thrown if one of the\n BufferedImageOp or RasterOp filter methods cannot\n process the image.", "codes": ["public class ImagingOpException\nextends RuntimeException"], "fields": [], "methods": []}

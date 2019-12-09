@@ -1,0 +1,1 @@
+{"name": "Class MetalBorders.OptionDialogBorder", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "The class represents the border of an option dialog.", "codes": ["public static class MetalBorders.OptionDialogBorder\nextends AbstractBorder\nimplements UIResource"], "fields": [], "methods": []}

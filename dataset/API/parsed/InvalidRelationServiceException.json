@@ -1,0 +1,1 @@
+{"name": "Class InvalidRelationServiceException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when an invalid Relation Service is provided.", "codes": ["public class InvalidRelationServiceException\nextends RelationException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Interface Configuration.Parameters", "module": "java.base", "package": "javax.security.auth.login", "text": "This represents a marker interface for Configuration parameters.", "codes": ["public static interface Configuration.Parameters"], "fields": [], "methods": []}

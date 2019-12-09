@@ -1,0 +1,1 @@
+{"name": "Annotation Type MemoryAddress", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event field annotation, specifies that the value is a memory address.", "codes": ["@Retention(RUNTIME)\n@Target({FIELD,TYPE,METHOD})\npublic @interface MemoryAddress"], "fields": [], "methods": []}

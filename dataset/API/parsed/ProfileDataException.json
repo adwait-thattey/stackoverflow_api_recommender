@@ -1,0 +1,1 @@
+{"name": "Class ProfileDataException", "module": "java.desktop", "package": "java.awt.color", "text": "This exception is thrown when an error occurs in accessing or\n processing an ICC_Profile object.", "codes": ["public class ProfileDataException\nextends RuntimeException"], "fields": [], "methods": []}

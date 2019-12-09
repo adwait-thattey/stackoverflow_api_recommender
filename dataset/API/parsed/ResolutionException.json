@@ -1,0 +1,1 @@
+{"name": "Class ResolutionException", "module": "java.base", "package": "java.lang.module", "text": "Thrown when resolving a set of modules, or resolving a set of modules with\n service binding, fails.", "codes": ["public class ResolutionException\nextends RuntimeException"], "fields": [], "methods": []}

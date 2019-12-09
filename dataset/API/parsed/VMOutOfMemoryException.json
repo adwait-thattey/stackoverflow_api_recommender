@@ -1,0 +1,1 @@
+{"name": "Class VMOutOfMemoryException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate that the requested operation cannot be\n completed because the target VM has run out of memory.", "codes": ["public class VMOutOfMemoryException\nextends RuntimeException"], "fields": [], "methods": []}

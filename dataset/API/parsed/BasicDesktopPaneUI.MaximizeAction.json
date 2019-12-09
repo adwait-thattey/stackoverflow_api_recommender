@@ -1,0 +1,1 @@
+{"name": "Class BasicDesktopPaneUI.MaximizeAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Handles maximizing an internal frame.", "codes": ["protected class BasicDesktopPaneUI.MaximizeAction\nextends AbstractAction"], "fields": [], "methods": []}

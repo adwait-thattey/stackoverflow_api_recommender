@@ -1,0 +1,1 @@
+{"name": "Class ClassFormatError", "module": "java.base", "package": "java.lang", "text": "Thrown when the Java Virtual Machine attempts to read a class\n file and determines that the file is malformed or otherwise cannot\n be interpreted as a class file.", "codes": ["public class ClassFormatError\nextends LinkageError"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class VerifyError", "module": "java.base", "package": "java.lang", "text": "Thrown when the \"verifier\" detects that a class file,\n though well formed, contains some sort of internal inconsistency\n or security problem.", "codes": ["public class VerifyError\nextends LinkageError"], "fields": [], "methods": []}

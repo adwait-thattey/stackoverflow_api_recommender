@@ -1,0 +1,1 @@
+{"name": "Class SocketSecurityException", "module": "java.rmi", "package": "java.rmi.server", "text": "An obsolete subclass of ExportException.", "codes": ["@Deprecated\npublic class SocketSecurityException\nextends ExportException"], "fields": [], "methods": []}

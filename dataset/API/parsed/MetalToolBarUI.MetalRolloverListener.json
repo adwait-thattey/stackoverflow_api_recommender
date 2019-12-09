@@ -1,0 +1,1 @@
+{"name": "Class MetalToolBarUI.MetalRolloverListener", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "No longer used. The class cannot be removed for compatibility reasons.", "codes": ["protected class MetalToolBarUI.MetalRolloverListener\nextends BasicToolBarUI.PropertyListener"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class RealmChoiceCallback", "module": "java.security.sasl", "package": "javax.security.sasl", "text": "This callback is used by SaslClient and SaslServer\n to obtain a realm given a list of realm choices.", "codes": ["public class RealmChoiceCallback\nextends ChoiceCallback"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class InvalidTypeException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate a type mismatch in setting the value of a field\n or variable, or in specifying the return value of a method.", "codes": ["public class InvalidTypeException\nextends Exception"], "fields": [], "methods": []}

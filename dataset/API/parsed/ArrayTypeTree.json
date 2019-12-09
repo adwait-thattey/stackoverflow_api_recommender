@@ -1,0 +1,1 @@
+{"name": "Interface ArrayTypeTree", "module": "jdk.compiler", "package": "com.sun.source.tree", "text": "A tree node for an array type.\n\n For example:\n \n   type []\n ", "codes": ["public interface ArrayTypeTree\nextends Tree"], "fields": [], "methods": [{"method_name": "getType", "method_sig": "Tree getType()", "description": "Returns the element type of this array type."}]}

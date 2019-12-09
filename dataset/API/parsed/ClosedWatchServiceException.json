@@ -1,0 +1,1 @@
+{"name": "Class ClosedWatchServiceException", "module": "java.base", "package": "java.nio.file", "text": "Unchecked exception thrown when an attempt is made to invoke an operation on\n a watch service that is closed.", "codes": ["public class ClosedWatchServiceException\nextends IllegalStateException"], "fields": [], "methods": []}

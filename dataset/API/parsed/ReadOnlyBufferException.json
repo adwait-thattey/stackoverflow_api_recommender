@@ -1,0 +1,1 @@
+{"name": "Class ReadOnlyBufferException", "module": "java.base", "package": "java.nio", "text": "Unchecked exception thrown when a content-mutation method such as\n put or compact is invoked upon a read-only buffer.", "codes": ["public class ReadOnlyBufferException\nextends UnsupportedOperationException"], "fields": [], "methods": []}

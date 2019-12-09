@@ -1,0 +1,1 @@
+{"name": "Class BasicSplitPaneUI.BasicVerticalLayoutManager", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "LayoutManager used for JSplitPanes with an orientation of\n VERTICAL_SPLIT.", "codes": ["public class BasicSplitPaneUI.BasicVerticalLayoutManager\nextends BasicSplitPaneUI.BasicHorizontalLayoutManager"], "fields": [], "methods": []}

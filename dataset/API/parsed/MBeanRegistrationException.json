@@ -1,0 +1,1 @@
+{"name": "Class MBeanRegistrationException", "module": "java.management", "package": "javax.management", "text": "Wraps exceptions thrown by the preRegister(), preDeregister() methods\n of the MBeanRegistration interface.", "codes": ["public class MBeanRegistrationException\nextends MBeanException"], "fields": [], "methods": []}

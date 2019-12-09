@@ -1,0 +1,1 @@
+{"name": "Class IllegalChannelGroupException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to open a channel\n in a group that was not created by the same provider.", "codes": ["public class IllegalChannelGroupException\nextends IllegalArgumentException"], "fields": [], "methods": []}

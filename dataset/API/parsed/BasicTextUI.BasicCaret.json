@@ -1,0 +1,1 @@
+{"name": "Class BasicTextUI.BasicCaret", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Default implementation of the interface Caret.", "codes": ["public static class BasicTextUI.BasicCaret\nextends DefaultCaret\nimplements UIResource"], "fields": [], "methods": []}

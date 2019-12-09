@@ -1,0 +1,1 @@
+{"name": "Interface NullType", "module": "java.compiler", "package": "javax.lang.model.type", "text": "Represents the null type.\n This is the type of the expression null,", "codes": ["public interface NullType\nextends ReferenceType"], "fields": [], "methods": []}

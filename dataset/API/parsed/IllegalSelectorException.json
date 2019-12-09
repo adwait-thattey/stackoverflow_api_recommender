@@ -1,0 +1,1 @@
+{"name": "Class IllegalSelectorException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to register a channel\n with a selector that was not created by the provider that created the\n channel.", "codes": ["public class IllegalSelectorException\nextends IllegalArgumentException"], "fields": [], "methods": []}

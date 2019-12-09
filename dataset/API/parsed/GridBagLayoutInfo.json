@@ -1,0 +1,1 @@
+{"name": "Class GridBagLayoutInfo", "module": "java.desktop", "package": "java.awt", "text": "The GridBagLayoutInfo is an utility class for\n GridBagLayout layout manager.\n It stores align, size and baseline parameters for every component within a container.", "codes": ["public class GridBagLayoutInfo\nextends Object\nimplements Serializable"], "fields": [], "methods": []}

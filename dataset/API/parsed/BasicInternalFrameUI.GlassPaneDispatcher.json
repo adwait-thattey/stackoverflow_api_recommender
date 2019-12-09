@@ -1,0 +1,1 @@
+{"name": "Class BasicInternalFrameUI.GlassPaneDispatcher", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Glass pane dispatcher.", "codes": ["protected class BasicInternalFrameUI.GlassPaneDispatcher\nextends Object\nimplements MouseInputListener"], "fields": [], "methods": []}

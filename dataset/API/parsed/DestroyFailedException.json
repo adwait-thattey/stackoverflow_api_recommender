@@ -1,0 +1,1 @@
+{"name": "Class DestroyFailedException", "module": "java.base", "package": "javax.security.auth", "text": "Signals that a destroy operation failed.\n\n  This exception is thrown by credentials implementing\n the Destroyable interface when the destroy\n method fails.", "codes": ["public class DestroyFailedException\nextends Exception"], "fields": [], "methods": []}

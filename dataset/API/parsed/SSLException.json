@@ -1,0 +1,1 @@
+{"name": "Class SSLException", "module": "java.base", "package": "javax.net.ssl", "text": "Indicates some kind of error detected by an SSL subsystem.\n This class is the general class of exceptions produced\n by failed SSL-related operations.", "codes": ["public class SSLException\nextends IOException"], "fields": [], "methods": []}

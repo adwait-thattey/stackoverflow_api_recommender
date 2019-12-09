@@ -1,0 +1,1 @@
+{"name": "Class DatatypeConfigurationException", "module": "java.xml", "package": "javax.xml.datatype", "text": "Indicates a serious configuration error.", "codes": ["public class DatatypeConfigurationException\nextends Exception"], "fields": [], "methods": []}

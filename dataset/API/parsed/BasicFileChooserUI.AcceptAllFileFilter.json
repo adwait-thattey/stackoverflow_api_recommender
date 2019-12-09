@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.AcceptAllFileFilter", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Accept all file filter.", "codes": ["protected class BasicFileChooserUI.AcceptAllFileFilter\nextends FileFilter"], "fields": [], "methods": [{"method_name": "accept", "method_sig": "public boolean accept (File f)", "description": "Returns true."}]}

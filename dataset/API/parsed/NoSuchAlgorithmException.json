@@ -1,0 +1,1 @@
+{"name": "Class NoSuchAlgorithmException", "module": "java.base", "package": "java.security", "text": "This exception is thrown when a particular cryptographic algorithm is\n requested but is not available in the environment.", "codes": ["public class NoSuchAlgorithmException\nextends GeneralSecurityException"], "fields": [], "methods": []}

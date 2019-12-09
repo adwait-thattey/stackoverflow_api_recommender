@@ -1,0 +1,1 @@
+{"name": "Class JMRuntimeException", "module": "java.management", "package": "javax.management", "text": "Runtime exceptions emitted by JMX implementations.", "codes": ["public class JMRuntimeException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class UnresolvedAddressException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to invoke a network\n operation upon an unresolved socket address.", "codes": ["public class UnresolvedAddressException\nextends IllegalArgumentException"], "fields": [], "methods": []}

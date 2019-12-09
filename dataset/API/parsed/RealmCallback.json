@@ -1,0 +1,1 @@
+{"name": "Class RealmCallback", "module": "java.security.sasl", "package": "javax.security.sasl", "text": "This callback is used by SaslClient and SaslServer\n to retrieve realm information.", "codes": ["public class RealmCallback\nextends TextInputCallback"], "fields": [], "methods": []}

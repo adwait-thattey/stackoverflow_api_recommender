@@ -1,0 +1,1 @@
+{"name": "Class JShell.Subscription", "module": "jdk.jshell", "package": "jdk.jshell", "text": "Subscription is a token for referring to subscriptions so they can\n be unsubscribed.", "codes": ["public class JShell.Subscription\nextends Object"], "fields": [], "methods": []}

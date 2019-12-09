@@ -1,0 +1,1 @@
+{"name": "Class ZipException", "module": "java.base", "package": "java.util.zip", "text": "Signals that a Zip exception of some sort has occurred.", "codes": ["public class ZipException\nextends IOException"], "fields": [], "methods": []}

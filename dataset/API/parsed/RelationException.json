@@ -1,0 +1,1 @@
+{"name": "Class RelationException", "module": "java.management", "package": "javax.management.relation", "text": "This class is the superclass of any exception which can be raised during\n relation management.", "codes": ["public class RelationException\nextends JMException"], "fields": [], "methods": []}

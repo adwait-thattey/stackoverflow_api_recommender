@@ -1,0 +1,1 @@
+{"name": "Class SocketTimeoutException", "module": "java.base", "package": "java.net", "text": "Signals that a timeout has occurred on a socket read or accept.", "codes": ["public class SocketTimeoutException\nextends InterruptedIOException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class BasicScrollBarUI.ArrowButtonListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Listener for cursor keys.", "codes": ["protected class BasicScrollBarUI.ArrowButtonListener\nextends MouseAdapter"], "fields": [], "methods": []}

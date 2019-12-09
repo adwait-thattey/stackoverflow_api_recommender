@@ -1,0 +1,1 @@
+{"name": "Class NoSuchFileException", "module": "java.base", "package": "java.nio.file", "text": "Checked exception thrown when an attempt is made to access a file that does\n not exist.", "codes": ["public class NoSuchFileException\nextends FileSystemException"], "fields": [], "methods": []}

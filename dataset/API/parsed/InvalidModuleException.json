@@ -1,0 +1,1 @@
+{"name": "Class InvalidModuleException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate that the requested module is invalid\n or became invalid after the module was unloaded.", "codes": ["public class InvalidModuleException\nextends RuntimeException"], "fields": [], "methods": []}

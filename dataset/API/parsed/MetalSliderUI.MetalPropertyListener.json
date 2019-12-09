@@ -1,0 +1,1 @@
+{"name": "Class MetalSliderUI.MetalPropertyListener", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "PropertyListener for JSlider.isFilled.", "codes": ["protected class MetalSliderUI.MetalPropertyListener\nextends BasicSliderUI.PropertyChangeHandler"], "fields": [], "methods": []}

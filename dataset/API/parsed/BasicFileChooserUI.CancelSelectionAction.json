@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.CancelSelectionAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Responds to a cancel request.", "codes": ["protected class BasicFileChooserUI.CancelSelectionAction\nextends AbstractAction"], "fields": [], "methods": []}

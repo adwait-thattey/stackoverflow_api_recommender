@@ -1,0 +1,1 @@
+{"name": "Class CatalogException", "module": "java.xml", "package": "javax.xml.catalog", "text": "The exception class handles errors that may happen while processing or using\n a catalog.", "codes": ["public class CatalogException\nextends RuntimeException"], "fields": [], "methods": []}

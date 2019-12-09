@@ -1,0 +1,1 @@
+{"name": "Class NoSuchDynamicMethodException", "module": "jdk.dynalink", "package": "jdk.dynalink", "text": "Thrown at the invocation if the call site can not be linked by any available GuardingDynamicLinker.", "codes": ["public class NoSuchDynamicMethodException\nextends RuntimeException"], "fields": [], "methods": []}

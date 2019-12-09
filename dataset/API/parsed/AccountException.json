@@ -1,0 +1,1 @@
+{"name": "Class AccountException", "module": "java.base", "package": "javax.security.auth.login", "text": "A generic account exception.", "codes": ["public class AccountException\nextends LoginException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class JMException", "module": "java.management", "package": "javax.management", "text": "Exceptions thrown by JMX implementations.\n It does not include the runtime exceptions.", "codes": ["public class JMException\nextends Exception"], "fields": [], "methods": []}

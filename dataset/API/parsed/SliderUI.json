@@ -1,0 +1,1 @@
+{"name": "Class SliderUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JSlider.", "codes": ["public abstract class SliderUI\nextends ComponentUI"], "fields": [], "methods": []}

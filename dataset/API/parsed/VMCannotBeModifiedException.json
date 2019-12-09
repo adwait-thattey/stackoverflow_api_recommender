@@ -1,0 +1,1 @@
+{"name": "Class VMCannotBeModifiedException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate that the operation is invalid because it would\n modify the VM and the VM is read-only.  See VirtualMachine.canBeModified().", "codes": ["public class VMCannotBeModifiedException\nextends UnsupportedOperationException"], "fields": [], "methods": []}

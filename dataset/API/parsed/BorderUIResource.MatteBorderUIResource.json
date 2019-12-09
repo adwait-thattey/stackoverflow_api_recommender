@@ -1,0 +1,1 @@
+{"name": "Class BorderUIResource.MatteBorderUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "A matte border UI resource.", "codes": ["public static class BorderUIResource.MatteBorderUIResource\nextends MatteBorder\nimplements UIResource"], "fields": [], "methods": []}

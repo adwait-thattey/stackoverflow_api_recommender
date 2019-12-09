@@ -1,0 +1,1 @@
+{"name": "Class SyncFailedException", "module": "java.base", "package": "java.io", "text": "Signals that a sync operation has failed.", "codes": ["public class SyncFailedException\nextends IOException"], "fields": [], "methods": []}

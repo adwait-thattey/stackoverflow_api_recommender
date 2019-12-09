@@ -1,0 +1,1 @@
+{"name": "Class NotCompliantMBeanException", "module": "java.management", "package": "javax.management", "text": "Exception which occurs when trying to register an  object in the MBean server that is not a JMX compliant MBean.", "codes": ["public class NotCompliantMBeanException\nextends OperationsException"], "fields": [], "methods": []}

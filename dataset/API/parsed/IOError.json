@@ -1,0 +1,1 @@
+{"name": "Class IOError", "module": "java.base", "package": "java.io", "text": "Thrown when a serious I/O error has occurred.", "codes": ["public class IOError\nextends Error"], "fields": [], "methods": []}

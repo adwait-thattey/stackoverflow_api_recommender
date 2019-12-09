@@ -1,0 +1,1 @@
+{"name": "Class NotBoundException", "module": "java.rmi", "package": "java.rmi", "text": "A NotBoundException is thrown if an attempt\n is made to lookup or unbind in the registry a name that has\n no associated binding.", "codes": ["public class NotBoundException\nextends Exception"], "fields": [], "methods": []}

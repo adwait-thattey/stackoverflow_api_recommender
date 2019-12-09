@@ -1,0 +1,1 @@
+{"name": "Class ConnectIOException", "module": "java.rmi", "package": "java.rmi", "text": "A ConnectIOException is thrown if an\n IOException occurs while making a connection\n to the remote host for a remote method call.", "codes": ["public class ConnectIOException\nextends RemoteException"], "fields": [], "methods": []}

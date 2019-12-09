@@ -1,0 +1,1 @@
+{"name": "Class RootPaneUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JRootPane.", "codes": ["public abstract class RootPaneUI\nextends ComponentUI"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Interface ScheduledFuture<V>", "module": "java.base", "package": "java.util.concurrent", "text": "A delayed result-bearing action that can be cancelled.\n Usually a scheduled future is the result of scheduling\n a task with a ScheduledExecutorService.", "codes": ["public interface ScheduledFuture<V>\nextends Delayed, Future<V>"], "fields": [], "methods": []}

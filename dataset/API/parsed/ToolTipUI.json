@@ -1,0 +1,1 @@
+{"name": "Class ToolTipUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JToolTip.", "codes": ["public abstract class ToolTipUI\nextends ComponentUI"], "fields": [], "methods": []}

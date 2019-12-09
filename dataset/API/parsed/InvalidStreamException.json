@@ -1,0 +1,1 @@
+{"name": "Class InvalidStreamException", "module": "jdk.sctp", "package": "com.sun.nio.sctp", "text": "Unchecked exception thrown when an attempt is made to send a\n message to an invalid stream.", "codes": ["public class InvalidStreamException\nextends IllegalArgumentException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class BasicTableUI.FocusHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "This class should be treated as a \"protected\" inner class.\n Instantiate it only within subclasses of BasicTableUI.", "codes": ["public class BasicTableUI.FocusHandler\nextends Object\nimplements FocusListener"], "fields": [], "methods": []}

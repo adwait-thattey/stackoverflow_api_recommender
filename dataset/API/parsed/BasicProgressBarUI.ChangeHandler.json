@@ -1,0 +1,1 @@
+{"name": "Class BasicProgressBarUI.ChangeHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "This class should be treated as a \"protected\" inner class.\n Instantiate it only within subclasses of BasicProgressBarUI.", "codes": ["public class BasicProgressBarUI.ChangeHandler\nextends Object\nimplements ChangeListener"], "fields": [], "methods": []}

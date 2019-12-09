@@ -1,0 +1,1 @@
+{"name": "Class CoderMalfunctionError", "module": "java.base", "package": "java.nio.charset", "text": "Error thrown when the decodeLoop method of\n a CharsetDecoder, or the encodeLoop method of a CharsetEncoder, throws an unexpected\n exception.", "codes": ["public class CoderMalfunctionError\nextends Error"], "fields": [], "methods": []}

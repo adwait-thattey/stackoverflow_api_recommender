@@ -1,0 +1,1 @@
+{"name": "Class BasicBorders.RolloverButtonBorder", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Special thin border for rollover toolbar buttons.", "codes": ["public static class BasicBorders.RolloverButtonBorder\nextends BasicBorders.ButtonBorder"], "fields": [], "methods": []}

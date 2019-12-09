@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.UpdateAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Rescans the files in the current directory", "codes": ["protected class BasicFileChooserUI.UpdateAction\nextends AbstractAction"], "fields": [], "methods": []}

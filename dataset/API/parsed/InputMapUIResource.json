@@ -1,0 +1,1 @@
+{"name": "Class InputMapUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "A subclass of javax.swing.InputMap that implements UIResource.\n UI classes which provide a InputMap should use this class.", "codes": ["public class InputMapUIResource\nextends InputMap\nimplements UIResource"], "fields": [], "methods": []}

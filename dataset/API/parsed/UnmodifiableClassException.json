@@ -1,0 +1,1 @@
+{"name": "Class UnmodifiableClassException", "module": "java.instrument", "package": "java.lang.instrument", "text": "Thrown by an implementation of\n Instrumentation.redefineClasses\n when one of the specified classes cannot be modified.", "codes": ["public class UnmodifiableClassException\nextends Exception"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class InaccessibleObjectException", "module": "java.base", "package": "java.lang.reflect", "text": "Thrown when Java language access checks cannot be suppressed.", "codes": ["public class InaccessibleObjectException\nextends RuntimeException"], "fields": [], "methods": []}

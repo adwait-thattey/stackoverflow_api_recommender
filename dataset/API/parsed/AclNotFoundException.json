@@ -1,0 +1,1 @@
+{"name": "Class AclNotFoundException", "module": "java.base", "package": "java.security.acl", "text": "This is an exception that is thrown whenever a reference is made to a\n non-existent ACL (Access Control List).", "codes": ["@Deprecated(since=\"9\",\n            forRemoval=true)\npublic class AclNotFoundException\nextends Exception"], "fields": [], "methods": []}

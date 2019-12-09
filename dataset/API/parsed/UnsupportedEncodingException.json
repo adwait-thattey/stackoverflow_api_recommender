@@ -1,0 +1,1 @@
+{"name": "Class UnsupportedEncodingException", "module": "java.base", "package": "java.io", "text": "The Character Encoding is not supported.", "codes": ["public class UnsupportedEncodingException\nextends IOException"], "fields": [], "methods": []}

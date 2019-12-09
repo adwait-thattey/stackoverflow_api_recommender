@@ -1,0 +1,1 @@
+{"name": "Class SecurityException", "module": "java.base", "package": "java.lang", "text": "Thrown by the security manager to indicate a security violation.", "codes": ["public class SecurityException\nextends RuntimeException"], "fields": [], "methods": []}

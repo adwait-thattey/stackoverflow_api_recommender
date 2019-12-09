@@ -1,5 +1,5 @@
 import json
-
+from unidecode import unidecode
 
 class Index:
     def __init__(self):
@@ -67,10 +67,7 @@ class CodeSnippet:
 
     @property
     def export_object(self):
-        obj = {
-            "language": self.language,
-            "snippet": self.snippet
-        }
+        obj = self.snippet
 
         return obj
 
@@ -169,8 +166,7 @@ class QuestionIndex:
         self.text_index = Index()
         self.code_index = Index()
         self.others_index = Index()
-<<<<<<< HEAD
-        self.answers_index = [AnswerIndex(ques.id, ix) for ix in range(len(ques.answers))]
+        self.answers_index = list()
 
 class APIField:
     def __init__(self, field_name, field_sig, description):
@@ -231,6 +227,7 @@ class APIDoc:
         self.module = CodeSnippet("java", module)
         self.package = CodeSnippet("java", package)
         self.text = doc_text
+        code_snippets = [unidecode(cs) for cs in code_snippets]
         self.codes = [CodeSnippet(lang, cs) for cs in code_snippets]
         self.index = None
         self.fields = list()
@@ -242,6 +239,7 @@ class APIDoc:
         self.fields.append(field)
 
     def add_method(self, method_name, method_signature, description):
+        method_signature = unidecode(method_signature)
         method = APIMethod(method_name=method_name, method_sig=method_signature, description=description)
         self.methods.append(method)
 
@@ -265,7 +263,9 @@ class APIDoc:
     @classmethod
     def from_json(cls, json_string):
         # parse json and return object of class
+        print('In from_json..')
         data = json.loads(json_string)
+        print(data)
         obj = cls(data['name'],data['module'],data['package'],data['text'],data['codes'])
 
         for field in data['fields']:
@@ -277,6 +277,3 @@ class APIDoc:
 
         return obj
         return None
-=======
-        self.answers_index = list()
->>>>>>> adwait

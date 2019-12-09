@@ -1,0 +1,1 @@
+{"name": "Class BasicToolBarUI.PropertyListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "The class listens for property changed events.", "codes": ["protected class BasicToolBarUI.PropertyListener\nextends Object\nimplements PropertyChangeListener"], "fields": [], "methods": []}

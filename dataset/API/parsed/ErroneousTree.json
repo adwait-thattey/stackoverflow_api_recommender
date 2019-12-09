@@ -1,0 +1,1 @@
+{"name": "Interface ErroneousTree", "module": "jdk.scripting.nashorn", "package": "jdk.nashorn.api.tree", "text": "A tree node to stand in for a malformed expression.", "codes": ["@Deprecated(since=\"11\",\n            forRemoval=true)\npublic interface ErroneousTree\nextends ExpressionTree"], "fields": [], "methods": []}

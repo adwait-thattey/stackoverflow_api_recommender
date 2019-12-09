@@ -1,0 +1,1 @@
+{"name": "Class MetalIconFactory.TreeLeafIcon", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "The class represents a tree leaf icon.", "codes": ["public static class MetalIconFactory.TreeLeafIcon\nextends MetalIconFactory.FileIcon16"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class SyncFactoryException", "module": "java.sql.rowset", "package": "javax.sql.rowset.spi", "text": "Indicates an error with SyncFactory mechanism. A disconnected\n RowSet implementation cannot be used  without a SyncProvider\n being successfully instantiated", "codes": ["public class SyncFactoryException\nextends SQLException"], "fields": [], "methods": []}

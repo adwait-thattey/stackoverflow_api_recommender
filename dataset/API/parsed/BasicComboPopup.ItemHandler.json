@@ -1,0 +1,1 @@
+{"name": "Class BasicComboPopup.ItemHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "This listener watches for changes to the selection in the\n combo box.", "codes": ["protected class BasicComboPopup.ItemHandler\nextends Object\nimplements ItemListener"], "fields": [], "methods": []}

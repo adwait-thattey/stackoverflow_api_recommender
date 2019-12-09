@@ -1,0 +1,1 @@
+{"name": "Annotation Type TransitionTo", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event field annotation, specifies that the event will soon transition to a thread.", "codes": ["@Retention(RUNTIME)\n@Target(FIELD)\npublic @interface TransitionTo"], "fields": [], "methods": []}

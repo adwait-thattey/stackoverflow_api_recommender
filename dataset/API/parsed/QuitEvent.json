@@ -1,0 +1,1 @@
+{"name": "Class QuitEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the application is asked to quit.", "codes": ["public final class QuitEvent\nextends AppEvent"], "fields": [], "methods": []}

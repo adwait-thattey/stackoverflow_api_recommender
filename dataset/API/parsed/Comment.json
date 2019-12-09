@@ -1,0 +1,1 @@
+{"name": "Interface Comment", "module": "java.xml", "package": "javax.xml.stream.events", "text": "An interface for comment events", "codes": ["public interface Comment\nextends XMLEvent"], "fields": [], "methods": [{"method_name": "getText", "method_sig": "String getText()", "description": "Return the string data of the comment, returns empty string if it\n does not exist"}]}

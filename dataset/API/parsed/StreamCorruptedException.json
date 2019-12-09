@@ -1,0 +1,1 @@
+{"name": "Class StreamCorruptedException", "module": "java.base", "package": "java.io", "text": "Thrown when control information that was read from an object stream\n violates internal consistency checks.", "codes": ["public class StreamCorruptedException\nextends ObjectStreamException"], "fields": [], "methods": []}

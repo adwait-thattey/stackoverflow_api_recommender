@@ -1,0 +1,1 @@
+{"name": "Class MetalFileChooserUI.FileRenderer", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "Obsolete class, not used in this version.", "codes": ["@Deprecated(since=\"9\")\nprotected class MetalFileChooserUI.FileRenderer\nextends DefaultListCellRenderer"], "fields": [], "methods": []}

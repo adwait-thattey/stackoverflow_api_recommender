@@ -1,0 +1,1 @@
+{"name": "Interface StatementTree", "module": "jdk.scripting.nashorn", "package": "jdk.nashorn.api.tree", "text": "A tree node used as the base class for the different kinds of\n statements.", "codes": ["@Deprecated(since=\"11\",\n            forRemoval=true)\npublic interface StatementTree\nextends Tree"], "fields": [], "methods": []}

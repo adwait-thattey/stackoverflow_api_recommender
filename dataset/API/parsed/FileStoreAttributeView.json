@@ -1,0 +1,1 @@
+{"name": "Interface FileStoreAttributeView", "module": "java.base", "package": "java.nio.file.attribute", "text": "An attribute view that is a read-only or updatable view of the attributes of\n a FileStore.", "codes": ["public interface FileStoreAttributeView\nextends AttributeView"], "fields": [], "methods": []}

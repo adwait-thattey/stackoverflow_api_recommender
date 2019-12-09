@@ -1,0 +1,1 @@
+{"name": "Class MetalIconFactory.PaletteCloseIcon", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "Defines an icon for Palette close", "codes": ["public static class MetalIconFactory.PaletteCloseIcon\nextends Object\nimplements Icon, UIResource, Serializable"], "fields": [], "methods": []}

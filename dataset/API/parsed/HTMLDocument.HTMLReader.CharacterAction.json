@@ -1,0 +1,1 @@
+{"name": "Class HTMLDocument.HTMLReader.CharacterAction", "module": "java.desktop", "package": "javax.swing.text.html", "text": "Action assigned by default to handle the Character task of the reader.", "codes": ["public class HTMLDocument.HTMLReader.CharacterAction\nextends HTMLDocument.HTMLReader.TagAction"], "fields": [], "methods": []}

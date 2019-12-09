@@ -1,0 +1,1 @@
+{"name": "Class DataFormatException", "module": "java.base", "package": "java.util.zip", "text": "Signals that a data format error has occurred.", "codes": ["public class DataFormatException\nextends Exception"], "fields": [], "methods": []}

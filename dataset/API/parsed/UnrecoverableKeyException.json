@@ -1,0 +1,1 @@
+{"name": "Class UnrecoverableKeyException", "module": "java.base", "package": "java.security", "text": "This exception is thrown if a key in the keystore cannot be recovered.", "codes": ["public class UnrecoverableKeyException\nextends UnrecoverableEntryException"], "fields": [], "methods": []}

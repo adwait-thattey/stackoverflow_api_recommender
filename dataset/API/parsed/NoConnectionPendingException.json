@@ -1,0 +1,1 @@
+{"name": "Class NoConnectionPendingException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when the finishConnect method of a SocketChannel is invoked without first\n successfully invoking its connect method.", "codes": ["public class NoConnectionPendingException\nextends IllegalStateException"], "fields": [], "methods": []}

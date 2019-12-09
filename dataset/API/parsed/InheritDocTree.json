@@ -1,0 +1,1 @@
+{"name": "Interface InheritDocTree", "module": "jdk.compiler", "package": "com.sun.source.doctree", "text": "A tree node for an @inheritDoc inline tag.\n\n \n {@inheritDoc}", "codes": ["public interface InheritDocTree\nextends InlineTagTree"], "fields": [], "methods": []}

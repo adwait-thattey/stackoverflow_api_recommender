@@ -1,0 +1,1 @@
+{"name": "Annotation Type Relational", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Meta annotation for relational annotations, to be used on an annotation.", "codes": ["@Retention(RUNTIME)\n@Target(ANNOTATION_TYPE)\npublic @interface Relational"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Annotation Type ContentType", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Meta annotation, specifies that an annotation represents a content type, such\n as a time span or a frequency.", "codes": ["@Target(ANNOTATION_TYPE)\n@Retention(RUNTIME)\npublic @interface ContentType"], "fields": [], "methods": []}

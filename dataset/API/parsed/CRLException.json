@@ -1,0 +1,1 @@
+{"name": "Class CRLException", "module": "java.base", "package": "java.security.cert", "text": "CRL (Certificate Revocation List) Exception.", "codes": ["public class CRLException\nextends GeneralSecurityException"], "fields": [], "methods": []}

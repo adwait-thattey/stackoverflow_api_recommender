@@ -131,12 +131,12 @@ def parse_API_doc(doc_soup: BeautifulSoup):
         field_details = doc_soup.find('a',attrs={'id':'field.detail'}).parent.findAll('ul',attrs={'class':'blockList'})
         # print(method_details)
         for row in field_details:
-            print(row)
+            # print(row)
             field_name = row.find('h4').text
-            field_sig = row.find('pre',attrs={'class':'fieldSignature'}).text
+            field_sig = row.find('pre').text
             desc = row.find('div',attrs={'class':'block'}).text
             apiDocObject.add_field(field_name=field_name, field_signature=field_sig, description=desc)
-            print(desc)
+            print(field_sig)
 
         last_detail = doc_soup.find('a',attrs={'id':'field.detail'}).parent.find('ul',attrs={'class':'blockListLast'})
         # print(last_detail)
@@ -144,7 +144,7 @@ def parse_API_doc(doc_soup: BeautifulSoup):
         field_sig = last_detail.find('pre').text
         desc = last_detail.find('div',attrs={'class':'block'}).text
         print(field_sig)
-        print(desc)
+        # print(desc)
         apiDocObject.add_field(field_name=field_name, field_signature=field_sig, description=desc)
     #
 
@@ -171,14 +171,20 @@ def parse_API_doc_driver(file):
 
     soupObject = BeautifulSoup(doc_raw,'html.parser')
     parsedDoc = parse_API_doc(soupObject)
-
+    print('Checking in parser.')
+    
+    print(parsedDoc.methods)
+    for method in parsedDoc.methods:
+        print(method.method_sig.snippet)
+    # print(new_doc.text)
+    # print('\n\n\n\n\n\n\n\n')
     # print(parsedDoc.__dict__)
-    # jsonified = parsedDoc.to_json()
+    jsonified = parsedDoc.to_json()
     # obj = models.APIDoc.from_json(jsonified)
     # print(obj.__dict__)
 
     log.success(f" Document {parsedDoc.name} parsed", module="parser")
-    return parsedDoc
+    return jsonified
 
 def test_method():
 
@@ -189,7 +195,6 @@ def test_method():
     print(obj.__dict__)
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     file = "dataset/questions/raw/using-filechannel-to-write-any-inputstream?.html"
     # q = parse_question_from_file(file)
     parse_API_doc_driver('dataset/API/raw/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html')
@@ -197,8 +202,3 @@ if __name__ == "__main__":
     # print(q.to_json())
 
     # test_method()
-=======
-    file = "./dataset/questions/raw/15235400.html"
-    q = parse_question_from_file(file)
-    log.debug(q.to_json())
->>>>>>> adwait

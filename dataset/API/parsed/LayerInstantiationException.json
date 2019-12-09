@@ -1,0 +1,1 @@
+{"name": "Class LayerInstantiationException", "module": "java.base", "package": "java.lang", "text": "Thrown when creating a module layer fails.", "codes": ["public class LayerInstantiationException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class BeanContextSupport.BCSIterator", "module": "java.desktop", "package": "java.beans.beancontext", "text": "protected final subclass that encapsulates an iterator but implements\n a noop remove() method.", "codes": ["protected static final class BeanContextSupport.BCSIterator\nextends Object\nimplements Iterator<Object>"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class VMDisconnectedException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Unchecked exception thrown to indicate that the\n requested operation cannot be\n completed because there is no longer a connection to the target VM.", "codes": ["public class VMDisconnectedException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class InstanceNotFoundException", "module": "java.management", "package": "javax.management", "text": "The specified MBean does not exist in the repository.", "codes": ["public class InstanceNotFoundException\nextends OperationsException"], "fields": [], "methods": []}

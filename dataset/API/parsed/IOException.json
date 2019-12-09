@@ -1,0 +1,1 @@
+{"name": "Class IOException", "module": "java.base", "package": "java.io", "text": "Signals that an I/O exception of some sort has occurred. This\n class is the general class of exceptions produced by failed or\n interrupted I/O operations.", "codes": ["public class IOException\nextends Exception"], "fields": [], "methods": []}

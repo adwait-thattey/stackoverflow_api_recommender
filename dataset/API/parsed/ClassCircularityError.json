@@ -1,0 +1,1 @@
+{"name": "Class ClassCircularityError", "module": "java.base", "package": "java.lang", "text": "Thrown when the Java Virtual Machine detects a circularity in the\n superclass hierarchy of a class being loaded.", "codes": ["public class ClassCircularityError\nextends LinkageError"], "fields": [], "methods": []}

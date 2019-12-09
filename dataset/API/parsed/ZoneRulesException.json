@@ -1,0 +1,1 @@
+{"name": "Class ZoneRulesException", "module": "java.base", "package": "java.time.zone", "text": "Thrown to indicate a problem with time-zone configuration.\n \n This exception is used to indicate a problems with the configured\n time-zone rules.", "codes": ["public class ZoneRulesException\nextends DateTimeException"], "fields": [], "methods": []}

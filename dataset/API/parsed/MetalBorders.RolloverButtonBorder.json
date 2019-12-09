@@ -1,0 +1,1 @@
+{"name": "Class MetalBorders.RolloverButtonBorder", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "The class represents the border of a rollover Button.", "codes": ["public static class MetalBorders.RolloverButtonBorder\nextends MetalBorders.ButtonBorder"], "fields": [], "methods": []}

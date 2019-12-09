@@ -1,0 +1,1 @@
+{"name": "Class BasicScrollPaneUI.HSBChangeListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Horizontal scrollbar listener.", "codes": ["public class BasicScrollPaneUI.HSBChangeListener\nextends Object\nimplements ChangeListener"], "fields": [], "methods": []}

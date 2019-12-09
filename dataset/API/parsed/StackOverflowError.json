@@ -1,0 +1,1 @@
+{"name": "Class StackOverflowError", "module": "java.base", "package": "java.lang", "text": "Thrown when a stack overflow occurs because an application\n recurses too deeply.", "codes": ["public class StackOverflowError\nextends VirtualMachineError"], "fields": [], "methods": []}

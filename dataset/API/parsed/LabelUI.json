@@ -1,0 +1,1 @@
+{"name": "Class LabelUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JLabel.", "codes": ["public abstract class LabelUI\nextends ComponentUI"], "fields": [], "methods": []}

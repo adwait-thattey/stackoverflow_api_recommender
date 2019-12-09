@@ -1,0 +1,1 @@
+{"name": "Class CancellationException", "module": "java.base", "package": "java.util.concurrent", "text": "Exception indicating that the result of a value-producing task,\n such as a FutureTask, cannot be retrieved because the task\n was cancelled.", "codes": ["public class CancellationException\nextends IllegalStateException"], "fields": [], "methods": []}

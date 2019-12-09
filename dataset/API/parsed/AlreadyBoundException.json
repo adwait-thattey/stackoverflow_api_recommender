@@ -1,0 +1,1 @@
+{"name": "Class AlreadyBoundException", "module": "java.rmi", "package": "java.rmi", "text": "An AlreadyBoundException is thrown if an attempt\n is made to bind an object in the registry to a name that already\n has an associated binding.", "codes": ["public class AlreadyBoundException\nextends Exception"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class AbsentInformationException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate line number or variable information is not available.", "codes": ["public class AbsentInformationException\nextends Exception"], "fields": [], "methods": []}

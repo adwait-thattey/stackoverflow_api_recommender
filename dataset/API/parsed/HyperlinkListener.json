@@ -1,0 +1,1 @@
+{"name": "Interface HyperlinkListener", "module": "java.desktop", "package": "javax.swing.event", "text": "HyperlinkListener", "codes": ["public interface HyperlinkListener\nextends EventListener"], "fields": [], "methods": [{"method_name": "hyperlinkUpdate", "method_sig": "void hyperlinkUpdate (HyperlinkEvent e)", "description": "Called when a hypertext link is updated."}]}

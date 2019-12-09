@@ -1,0 +1,1 @@
+{"name": "Class BindException", "module": "java.base", "package": "java.net", "text": "Signals that an error occurred while attempting to bind a\n socket to a local address and port.  Typically, the port is\n in use, or the requested local address could not be assigned.", "codes": ["public class BindException\nextends SocketException"], "fields": [], "methods": []}

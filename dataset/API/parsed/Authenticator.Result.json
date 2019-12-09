@@ -1,0 +1,1 @@
+{"name": "Class Authenticator.Result", "module": "jdk.httpserver", "package": "com.sun.net.httpserver", "text": "Base class for return type from authenticate() method", "codes": ["public abstract static class Authenticator.Result\nextends Object"], "fields": [], "methods": []}

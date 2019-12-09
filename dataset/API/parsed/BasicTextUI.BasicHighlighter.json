@@ -1,0 +1,1 @@
+{"name": "Class BasicTextUI.BasicHighlighter", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Default implementation of the interface Highlighter.", "codes": ["public static class BasicTextUI.BasicHighlighter\nextends DefaultHighlighter\nimplements UIResource"], "fields": [], "methods": []}

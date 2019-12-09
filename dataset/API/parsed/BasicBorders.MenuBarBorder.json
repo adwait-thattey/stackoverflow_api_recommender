@@ -1,0 +1,1 @@
+{"name": "Class BasicBorders.MenuBarBorder", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Draws the border around a menu bar.", "codes": ["public static class BasicBorders.MenuBarBorder\nextends AbstractBorder\nimplements UIResource"], "fields": [], "methods": []}

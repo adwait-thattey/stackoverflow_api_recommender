@@ -1,0 +1,1 @@
+{"name": "Interface TextTree", "module": "jdk.compiler", "package": "com.sun.source.doctree", "text": "A tree node for plain text.", "codes": ["public interface TextTree\nextends DocTree"], "fields": [], "methods": [{"method_name": "getBody", "method_sig": "String getBody()", "description": "Returns the text."}]}

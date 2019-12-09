@@ -1,0 +1,1 @@
+{"name": "Class BasicComboPopup.ListMouseHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "This listener hides the popup when the mouse is released in the list.", "codes": ["protected class BasicComboPopup.ListMouseHandler\nextends MouseAdapter"], "fields": [], "methods": []}

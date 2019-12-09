@@ -1,0 +1,1 @@
+{"name": "Class CMMException", "module": "java.desktop", "package": "java.awt.color", "text": "This exception is thrown if the native CMM returns an error.", "codes": ["public class CMMException\nextends RuntimeException"], "fields": [], "methods": []}

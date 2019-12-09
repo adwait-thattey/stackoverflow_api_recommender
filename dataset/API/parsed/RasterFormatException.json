@@ -1,0 +1,1 @@
+{"name": "Class RasterFormatException", "module": "java.desktop", "package": "java.awt.image", "text": "The RasterFormatException is thrown if there is\n invalid layout information in the Raster.", "codes": ["public class RasterFormatException\nextends RuntimeException"], "fields": [], "methods": []}

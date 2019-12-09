@@ -1,0 +1,1 @@
+{"name": "Class JTabbedPane.ModelListener", "module": "java.desktop", "package": "javax.swing", "text": "We pass ModelChanged events along to the listeners with\n the tabbedpane (instead of the model itself) as the event source.", "codes": ["protected class JTabbedPane.ModelListener\nextends Object\nimplements ChangeListener, Serializable"], "fields": [], "methods": []}

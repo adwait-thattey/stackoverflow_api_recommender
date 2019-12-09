@@ -1,0 +1,1 @@
+{"name": "Class StringConcatException", "module": "java.base", "package": "java.lang.invoke", "text": "StringConcatException is thrown by StringConcatFactory when linkage\n invariants are violated.", "codes": ["public class StringConcatException\nextends Exception"], "fields": [], "methods": []}

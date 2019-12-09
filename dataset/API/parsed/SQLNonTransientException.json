@@ -1,0 +1,1 @@
+{"name": "Class SQLNonTransientException", "module": "java.sql", "package": "java.sql", "text": "The subclass of SQLException thrown when an instance where a retry\n of the same operation would fail unless the cause of the SQLException\n is corrected.", "codes": ["public class SQLNonTransientException\nextends SQLException"], "fields": [], "methods": []}

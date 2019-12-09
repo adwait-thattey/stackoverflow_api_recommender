@@ -1,0 +1,1 @@
+{"name": "Class EmptyStackException", "module": "java.base", "package": "java.util", "text": "Thrown by methods in the Stack class to indicate\n that the stack is empty.", "codes": ["public class EmptyStackException\nextends RuntimeException"], "fields": [], "methods": []}

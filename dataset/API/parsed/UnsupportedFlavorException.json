@@ -1,0 +1,1 @@
+{"name": "Class UnsupportedFlavorException", "module": "java.datatransfer", "package": "java.awt.datatransfer", "text": "Signals that the requested data is not supported in this flavor.", "codes": ["public class UnsupportedFlavorException\nextends Exception"], "fields": [], "methods": []}

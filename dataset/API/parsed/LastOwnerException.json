@@ -1,0 +1,1 @@
+{"name": "Class LastOwnerException", "module": "java.base", "package": "java.security.acl", "text": "This is an exception that is thrown whenever an attempt is made to delete\n the last owner of an Access Control List.", "codes": ["@Deprecated(since=\"9\",\n            forRemoval=true)\npublic class LastOwnerException\nextends Exception"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class BrokenBarrierException", "module": "java.base", "package": "java.util.concurrent", "text": "Exception thrown when a thread tries to wait upon a barrier that is\n in a broken state, or which enters the broken state while the thread\n is waiting.", "codes": ["public class BrokenBarrierException\nextends Exception"], "fields": [], "methods": []}

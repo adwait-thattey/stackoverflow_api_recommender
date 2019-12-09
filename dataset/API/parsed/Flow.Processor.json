@@ -1,0 +1,1 @@
+{"name": "Interface Flow.Processor<T,\u200bR>", "module": "java.base", "package": "java.util.concurrent", "text": "A component that acts as both a Subscriber and Publisher.", "codes": ["public static interface Flow.Processor<T, R>\nextends Flow.Subscriber<T>, Flow.Publisher<R>"], "fields": [], "methods": []}

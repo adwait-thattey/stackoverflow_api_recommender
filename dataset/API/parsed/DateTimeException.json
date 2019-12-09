@@ -1,0 +1,1 @@
+{"name": "Class DateTimeException", "module": "java.base", "package": "java.time", "text": "Exception used to indicate a problem while calculating a date-time.\n \n This exception is used to indicate problems with creating, querying\n and manipulating date-time objects.", "codes": ["public class DateTimeException\nextends RuntimeException"], "fields": [], "methods": []}

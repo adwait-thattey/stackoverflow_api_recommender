@@ -1,0 +1,1 @@
+{"name": "Class ToolTipManager.insideTimerAction", "module": "java.desktop", "package": "javax.swing", "text": "Inside timer action.", "codes": ["protected class ToolTipManager.insideTimerAction\nextends Object\nimplements ActionListener"], "fields": [], "methods": []}

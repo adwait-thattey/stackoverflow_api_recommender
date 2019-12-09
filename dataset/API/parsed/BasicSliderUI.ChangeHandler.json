@@ -1,0 +1,1 @@
+{"name": "Class BasicSliderUI.ChangeHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Data model listener.\n\n This class should be treated as a \"protected\" inner class.\n Instantiate it only within subclasses of Foo.", "codes": ["public class BasicSliderUI.ChangeHandler\nextends Object\nimplements ChangeListener"], "fields": [], "methods": []}

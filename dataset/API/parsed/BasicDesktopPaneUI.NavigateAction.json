@@ -1,0 +1,1 @@
+{"name": "Class BasicDesktopPaneUI.NavigateAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Handles navigating to the next internal frame.", "codes": ["protected class BasicDesktopPaneUI.NavigateAction\nextends AbstractAction"], "fields": [], "methods": []}

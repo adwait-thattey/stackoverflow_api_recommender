@@ -1,0 +1,1 @@
+{"name": "Class BackingStoreException", "module": "java.prefs", "package": "java.util.prefs", "text": "Thrown to indicate that a preferences operation could not complete because\n of a failure in the backing store, or a failure to contact the backing\n store.", "codes": ["public class BackingStoreException\nextends Exception"], "fields": [], "methods": []}

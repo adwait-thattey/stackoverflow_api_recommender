@@ -1,0 +1,1 @@
+{"name": "Class ProgressBarUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JProgressBar.", "codes": ["public abstract class ProgressBarUI\nextends ComponentUI"], "fields": [], "methods": []}

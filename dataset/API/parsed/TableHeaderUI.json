@@ -1,0 +1,1 @@
+{"name": "Class TableHeaderUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JTableHeader.", "codes": ["public abstract class TableHeaderUI\nextends ComponentUI"], "fields": [], "methods": []}

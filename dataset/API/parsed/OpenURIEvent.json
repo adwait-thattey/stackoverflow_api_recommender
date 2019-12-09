@@ -1,0 +1,1 @@
+{"name": "Class OpenURIEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the app is asked to open a URI.", "codes": ["public final class OpenURIEvent\nextends AppEvent"], "fields": [], "methods": [{"method_name": "getURI", "method_sig": "public URI getURI()", "description": "Get the URI the app was asked to open"}]}

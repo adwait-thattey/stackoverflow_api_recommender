@@ -1,0 +1,1 @@
+{"name": "Class ColorChooserUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JColorChooser.", "codes": ["public abstract class ColorChooserUI\nextends ComponentUI"], "fields": [], "methods": []}

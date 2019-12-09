@@ -1,0 +1,1 @@
+{"name": "Interface DebuggerTree", "module": "jdk.scripting.nashorn", "package": "jdk.nashorn.api.tree", "text": "A tree node for a 'debugger' statement.\n\n For example:\n \n     debugger;\n ", "codes": ["@Deprecated(since=\"11\",\n            forRemoval=true)\npublic interface DebuggerTree\nextends StatementTree"], "fields": [], "methods": []}

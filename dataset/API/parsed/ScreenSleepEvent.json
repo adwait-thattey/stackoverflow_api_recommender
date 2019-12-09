@@ -1,0 +1,1 @@
+{"name": "Class ScreenSleepEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the displays attached to the system enter and exit power save\n sleep.", "codes": ["public final class ScreenSleepEvent\nextends AppEvent"], "fields": [], "methods": []}

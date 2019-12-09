@@ -1,0 +1,1 @@
+{"name": "Class NoSuchFieldException", "module": "java.base", "package": "java.lang", "text": "Signals that the class doesn't have a field of a specified name.", "codes": ["public class NoSuchFieldException\nextends ReflectiveOperationException"], "fields": [], "methods": []}

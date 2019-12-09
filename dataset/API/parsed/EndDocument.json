@@ -1,0 +1,1 @@
+{"name": "Interface EndDocument", "module": "java.xml", "package": "javax.xml.stream.events", "text": "A marker interface for the end of the document", "codes": ["public interface EndDocument\nextends XMLEvent"], "fields": [], "methods": []}

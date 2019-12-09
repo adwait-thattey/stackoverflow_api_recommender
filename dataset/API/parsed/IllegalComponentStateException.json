@@ -1,0 +1,1 @@
+{"name": "Class IllegalComponentStateException", "module": "java.desktop", "package": "java.awt", "text": "Signals that an AWT component is not in an appropriate state for\n the requested operation.", "codes": ["public class IllegalComponentStateException\nextends IllegalStateException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class CardNotPresentException", "module": "java.smartcardio", "package": "javax.smartcardio", "text": "Exception thrown when an application tries to establish a connection with a\n terminal that has no card present.", "codes": ["public class CardNotPresentException\nextends CardException"], "fields": [], "methods": []}

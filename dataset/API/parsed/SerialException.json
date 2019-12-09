@@ -1,0 +1,1 @@
+{"name": "Class SerialException", "module": "java.sql.rowset", "package": "javax.sql.rowset.serial", "text": "Indicates and an error with the serialization or de-serialization of\n SQL types such as BLOB, CLOB, STRUCT or ARRAY in\n addition to SQL types such as DATALINK and JAVAOBJECT", "codes": ["public class SerialException\nextends SQLException"], "fields": [], "methods": []}

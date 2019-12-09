@@ -1,0 +1,1 @@
+{"name": "Class ToolTipManager.stillInsideTimerAction", "module": "java.desktop", "package": "javax.swing", "text": "Still inside timer action.", "codes": ["protected class ToolTipManager.stillInsideTimerAction\nextends Object\nimplements ActionListener"], "fields": [], "methods": []}

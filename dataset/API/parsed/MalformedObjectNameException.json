@@ -1,0 +1,1 @@
+{"name": "Class MalformedObjectNameException", "module": "java.management", "package": "javax.management", "text": "The format of the string does not correspond to a valid ObjectName.", "codes": ["public class MalformedObjectNameException\nextends OperationsException"], "fields": [], "methods": []}

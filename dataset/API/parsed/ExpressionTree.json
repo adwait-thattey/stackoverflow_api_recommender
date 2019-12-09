@@ -1,0 +1,1 @@
+{"name": "Interface ExpressionTree", "module": "jdk.scripting.nashorn", "package": "jdk.nashorn.api.tree", "text": "A tree node used as the base class for the different types of\n expressions.", "codes": ["@Deprecated(since=\"11\",\n            forRemoval=true)\npublic interface ExpressionTree\nextends Tree"], "fields": [], "methods": []}

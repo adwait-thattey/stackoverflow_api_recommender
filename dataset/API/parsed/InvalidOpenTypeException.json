@@ -1,0 +1,1 @@
+{"name": "Class InvalidOpenTypeException", "module": "java.management", "package": "javax.management.openmbean", "text": "This runtime exception is thrown to indicate that the open type of an open data value\n is not the one expected.", "codes": ["public class InvalidOpenTypeException\nextends IllegalArgumentException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class XPathFunctionException", "module": "java.xml", "package": "javax.xml.xpath", "text": "XPathFunctionException represents an error with an XPath function.", "codes": ["public class XPathFunctionException\nextends XPathExpressionException"], "fields": [], "methods": []}

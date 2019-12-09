@@ -1,0 +1,1 @@
+{"name": "Class InvalidRelationIdException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when relation id provided for a relation is already\n used.", "codes": ["public class InvalidRelationIdException\nextends RelationException"], "fields": [], "methods": []}

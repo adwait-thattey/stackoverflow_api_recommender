@@ -1,0 +1,1 @@
+{"name": "Class UnknownError", "module": "java.base", "package": "java.lang", "text": "Thrown when an unknown but serious exception has occurred in the\n Java Virtual Machine.", "codes": ["public class UnknownError\nextends VirtualMachineError"], "fields": [], "methods": []}

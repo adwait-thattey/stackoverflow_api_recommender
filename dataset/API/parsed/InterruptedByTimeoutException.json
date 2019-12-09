@@ -1,0 +1,1 @@
+{"name": "Class InterruptedByTimeoutException", "module": "java.base", "package": "java.nio.channels", "text": "Checked exception received by a thread when a timeout elapses before an\n asynchronous operation completes.", "codes": ["public class InterruptedByTimeoutException\nextends IOException"], "fields": [], "methods": []}

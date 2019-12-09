@@ -1,0 +1,1 @@
+{"name": "Class ClosedDirectoryStreamException", "module": "java.base", "package": "java.nio.file", "text": "Unchecked exception thrown when an attempt is made to invoke an operation on\n a directory stream that is closed.", "codes": ["public class ClosedDirectoryStreamException\nextends IllegalStateException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class StandardDoclet", "module": "jdk.javadoc", "package": "jdk.javadoc.doclet", "text": "This doclet generates HTML-formatted documentation for the specified modules,\n packages and types.", "codes": ["public class StandardDoclet\nextends Object\nimplements Doclet"], "fields": [], "methods": []}

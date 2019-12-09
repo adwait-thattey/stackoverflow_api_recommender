@@ -1,0 +1,1 @@
+{"name": "Class BorderUIResource.EtchedBorderUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "An etched border UI resource.", "codes": ["public static class BorderUIResource.EtchedBorderUIResource\nextends EtchedBorder\nimplements UIResource"], "fields": [], "methods": []}

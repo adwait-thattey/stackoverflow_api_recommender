@@ -1,0 +1,1 @@
+{"name": "Interface PrimitiveType", "module": "java.compiler", "package": "javax.lang.model.type", "text": "Represents a primitive type.  These include\n boolean, byte, short, int,\n long, char, float, and double.", "codes": ["public interface PrimitiveType\nextends TypeMirror"], "fields": [], "methods": []}

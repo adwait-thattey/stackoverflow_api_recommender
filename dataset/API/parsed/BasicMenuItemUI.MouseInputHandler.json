@@ -1,0 +1,1 @@
+{"name": "Class BasicMenuItemUI.MouseInputHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Mouse input handler", "codes": ["protected class BasicMenuItemUI.MouseInputHandler\nextends Object\nimplements MouseInputListener"], "fields": [], "methods": []}

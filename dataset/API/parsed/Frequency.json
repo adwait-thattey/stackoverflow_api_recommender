@@ -1,0 +1,1 @@
+{"name": "Annotation Type Frequency", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event field annotation, specifies that the value is a frequency, measured in Hz.", "codes": ["@Retention(RUNTIME)\n@Target({FIELD,METHOD})\npublic @interface Frequency"], "fields": [], "methods": []}

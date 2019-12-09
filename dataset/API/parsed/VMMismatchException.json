@@ -1,0 +1,1 @@
+{"name": "Class VMMismatchException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate that the requested operation cannot be\n completed because the a mirror from one target VM is being\n combined with a mirror from another target VM.", "codes": ["public class VMMismatchException\nextends RuntimeException"], "fields": [], "methods": []}

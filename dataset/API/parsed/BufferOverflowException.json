@@ -1,0 +1,1 @@
+{"name": "Class BufferOverflowException", "module": "java.base", "package": "java.nio", "text": "Unchecked exception thrown when a relative put operation reaches\n the target buffer's limit.", "codes": ["public class BufferOverflowException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class GeneralSecurityException", "module": "java.base", "package": "java.security", "text": "The GeneralSecurityException class is a generic\n security exception class that provides type safety for all the\n security-related exception classes that extend from it.", "codes": ["public class GeneralSecurityException\nextends Exception"], "fields": [], "methods": []}

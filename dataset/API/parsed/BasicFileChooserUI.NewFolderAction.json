@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.NewFolderAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Creates a new folder.", "codes": ["protected class BasicFileChooserUI.NewFolderAction\nextends AbstractAction"], "fields": [], "methods": []}

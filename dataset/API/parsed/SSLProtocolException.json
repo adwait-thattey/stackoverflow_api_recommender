@@ -1,0 +1,1 @@
+{"name": "Class SSLProtocolException", "module": "java.base", "package": "javax.net.ssl", "text": "Reports an error in the operation of the SSL protocol.  Normally\n this indicates a flaw in one of the protocol implementations.", "codes": ["public class SSLProtocolException\nextends SSLException"], "fields": [], "methods": []}

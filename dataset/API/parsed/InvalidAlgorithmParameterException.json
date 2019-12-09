@@ -1,0 +1,1 @@
+{"name": "Class InvalidAlgorithmParameterException", "module": "java.base", "package": "java.security", "text": "This is the exception for invalid or inappropriate algorithm parameters.", "codes": ["public class InvalidAlgorithmParameterException\nextends GeneralSecurityException"], "fields": [], "methods": []}

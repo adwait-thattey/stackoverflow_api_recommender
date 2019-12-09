@@ -1,0 +1,1 @@
+{"name": "Class SystemSleepEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the system enters and exits power save sleep.", "codes": ["public final class SystemSleepEvent\nextends AppEvent"], "fields": [], "methods": []}

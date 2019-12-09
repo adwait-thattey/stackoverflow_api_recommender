@@ -1,0 +1,1 @@
+{"name": "Class UnsupportedClassVersionError", "module": "java.base", "package": "java.lang", "text": "Thrown when the Java Virtual Machine attempts to read a class\n file and determines that the major and minor version numbers\n in the file are not supported.", "codes": ["public class UnsupportedClassVersionError\nextends ClassFormatError"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Annotation Type StackTrace", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event annotation, determines whether an event by default has a stack trace\n or not.", "codes": ["@Target(TYPE)\n@Inherited\n@Retention(RUNTIME)\npublic @interface StackTrace"], "fields": [], "methods": []}

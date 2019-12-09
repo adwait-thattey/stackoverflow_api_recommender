@@ -1,0 +1,1 @@
+{"name": "Interface AccessWatchpointEvent", "module": "jdk.jdi", "package": "com.sun.jdi.event", "text": "Notification of a field access in the target VM. Field modifications\n are not considered field accesses.", "codes": ["public interface AccessWatchpointEvent\nextends WatchpointEvent"], "fields": [], "methods": []}

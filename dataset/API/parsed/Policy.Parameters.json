@@ -1,0 +1,1 @@
+{"name": "Interface Policy.Parameters", "module": "java.base", "package": "java.security", "text": "This represents a marker interface for Policy parameters.", "codes": ["public static interface Policy.Parameters"], "fields": [], "methods": []}

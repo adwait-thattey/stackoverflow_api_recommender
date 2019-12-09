@@ -1,0 +1,1 @@
+{"name": "Class InputMismatchException", "module": "java.base", "package": "java.util", "text": "Thrown by a Scanner to indicate that the token\n retrieved does not match the pattern for the expected type, or\n that the token is out of range for the expected type.", "codes": ["public class InputMismatchException\nextends NoSuchElementException"], "fields": [], "methods": []}

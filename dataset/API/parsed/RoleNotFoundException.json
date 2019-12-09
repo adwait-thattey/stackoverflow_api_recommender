@@ -1,0 +1,1 @@
+{"name": "Class RoleNotFoundException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when a role in a relation does not exist, or is not\n readable, or is not settable.", "codes": ["public class RoleNotFoundException\nextends RelationException"], "fields": [], "methods": []}

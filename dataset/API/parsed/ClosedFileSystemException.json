@@ -1,0 +1,1 @@
+{"name": "Class ClosedFileSystemException", "module": "java.base", "package": "java.nio.file", "text": "Unchecked exception thrown when an attempt is made to invoke an operation on\n a file and the file system is closed.", "codes": ["public class ClosedFileSystemException\nextends IllegalStateException"], "fields": [], "methods": []}

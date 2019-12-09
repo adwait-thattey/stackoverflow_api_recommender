@@ -1,0 +1,1 @@
+{"name": "Class NotYetBoundException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to invoke an I/O\n operation upon a server socket channel that is not yet bound.", "codes": ["public class NotYetBoundException\nextends IllegalStateException"], "fields": [], "methods": []}

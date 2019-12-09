@@ -1,0 +1,1 @@
+{"name": "Class MimeTypeParseException", "module": "java.datatransfer", "package": "java.awt.datatransfer", "text": "A class to encapsulate MimeType parsing related exceptions.", "codes": ["public class MimeTypeParseException\nextends Exception"], "fields": [], "methods": []}

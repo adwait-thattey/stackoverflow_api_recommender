@@ -1,0 +1,1 @@
+{"name": "Class BasicScrollBarUI.ModelListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "A listener to listen for model changes.", "codes": ["protected class BasicScrollBarUI.ModelListener\nextends Object\nimplements ChangeListener"], "fields": [], "methods": []}

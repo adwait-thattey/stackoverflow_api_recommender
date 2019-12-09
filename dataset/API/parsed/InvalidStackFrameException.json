@@ -1,0 +1,1 @@
+{"name": "Class InvalidStackFrameException", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "Thrown to indicate that the requested operation cannot be\n completed because the specified stack frame is no longer valid.", "codes": ["public class InvalidStackFrameException\nextends RuntimeException"], "fields": [], "methods": []}

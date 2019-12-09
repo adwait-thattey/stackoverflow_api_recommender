@@ -1,0 +1,1 @@
+{"name": "Class CompletionException", "module": "java.base", "package": "java.util.concurrent", "text": "Exception thrown when an error or other exception is encountered\n in the course of completing a result or task.", "codes": ["public class CompletionException\nextends RuntimeException"], "fields": [], "methods": []}

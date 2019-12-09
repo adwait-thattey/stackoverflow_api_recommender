@@ -1,0 +1,1 @@
+{"name": "Class DuplicateRequestException", "module": "jdk.jdi", "package": "com.sun.jdi.request", "text": "Thrown to indicate a duplicate event request.", "codes": ["public class DuplicateRequestException\nextends RuntimeException"], "fields": [], "methods": []}

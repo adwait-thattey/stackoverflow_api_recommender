@@ -1,0 +1,1 @@
+{"name": "Class RejectedExecutionException", "module": "java.base", "package": "java.util.concurrent", "text": "Exception thrown by an Executor when a task cannot be\n accepted for execution.", "codes": ["public class RejectedExecutionException\nextends RuntimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class JTree.TreeModelHandler", "module": "java.desktop", "package": "javax.swing", "text": "Listens to the model and updates the expandedState\n accordingly when nodes are removed, or changed.", "codes": ["protected class JTree.TreeModelHandler\nextends Object\nimplements TreeModelListener"], "fields": [], "methods": []}

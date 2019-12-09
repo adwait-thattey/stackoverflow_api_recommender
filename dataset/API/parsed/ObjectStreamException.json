@@ -1,0 +1,1 @@
+{"name": "Class ObjectStreamException", "module": "java.base", "package": "java.io", "text": "Superclass of all exceptions specific to Object Stream classes.", "codes": ["public abstract class ObjectStreamException\nextends IOException"], "fields": [], "methods": []}

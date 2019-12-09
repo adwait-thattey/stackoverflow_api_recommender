@@ -1,0 +1,1 @@
+{"name": "Class BasicInternalFrameUI.BasicInternalFrameListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Basic internal frame listener.", "codes": ["protected class BasicInternalFrameUI.BasicInternalFrameListener\nextends Object\nimplements InternalFrameListener"], "fields": [], "methods": []}

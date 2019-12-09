@@ -1,0 +1,1 @@
+{"name": "Class SignatureException", "module": "java.base", "package": "java.security", "text": "This is the generic Signature exception.", "codes": ["public class SignatureException\nextends GeneralSecurityException"], "fields": [], "methods": []}

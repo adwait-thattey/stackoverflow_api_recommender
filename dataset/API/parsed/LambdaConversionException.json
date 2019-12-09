@@ -1,0 +1,1 @@
+{"name": "Class LambdaConversionException", "module": "java.base", "package": "java.lang.invoke", "text": "LambdaConversionException", "codes": ["public class LambdaConversionException\nextends Exception"], "fields": [], "methods": []}

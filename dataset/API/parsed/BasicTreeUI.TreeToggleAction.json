@@ -1,0 +1,1 @@
+{"name": "Class BasicTreeUI.TreeToggleAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "For the first selected row expandedness will be toggled.", "codes": ["public class BasicTreeUI.TreeToggleAction\nextends AbstractAction"], "fields": [], "methods": []}

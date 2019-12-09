@@ -1,0 +1,1 @@
+{"name": "Class ConnectionPendingException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to connect a SocketChannel for which a non-blocking connection operation is already in\n progress.", "codes": ["public class ConnectionPendingException\nextends IllegalStateException"], "fields": [], "methods": []}

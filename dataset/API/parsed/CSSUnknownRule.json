@@ -1,0 +1,1 @@
+{"name": "Interface CSSUnknownRule", "module": "jdk.xml.dom", "package": "org.w3c.dom.css", "text": "The CSSUnknownRule interface represents an at-rule not\n supported by this user agent.\n See also the Document Object Model (DOM) Level 2 Style Specification.", "codes": ["public interface CSSUnknownRule\nextends CSSRule"], "fields": [], "methods": []}

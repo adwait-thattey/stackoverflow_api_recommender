@@ -1,0 +1,1 @@
+{"name": "Class BasicBorders.ToggleButtonBorder", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Draws the border around a toggle button.", "codes": ["public static class BasicBorders.ToggleButtonBorder\nextends BasicBorders.ButtonBorder"], "fields": [], "methods": []}

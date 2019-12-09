@@ -1,0 +1,1 @@
+{"name": "Class ActivateFailedException", "module": "java.rmi", "package": "java.rmi.activation", "text": "This exception is thrown by the RMI runtime when activation\n fails during a remote call to an activatable object.", "codes": ["public class ActivateFailedException\nextends RemoteException"], "fields": [], "methods": []}

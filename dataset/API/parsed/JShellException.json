@@ -1,0 +1,1 @@
+{"name": "Class JShellException", "module": "jdk.jshell", "package": "jdk.jshell", "text": "The superclass of JShell generated exceptions", "codes": ["public class JShellException\nextends Exception"], "fields": [], "methods": []}

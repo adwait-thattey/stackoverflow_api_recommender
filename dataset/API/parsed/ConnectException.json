@@ -1,0 +1,1 @@
+{"name": "Class ConnectException", "module": "java.rmi", "package": "java.rmi", "text": "A ConnectException is thrown if a connection is refused\n to the remote host for a remote method call.", "codes": ["public class ConnectException\nextends RemoteException"], "fields": [], "methods": []}

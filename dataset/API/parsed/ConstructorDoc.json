@@ -1,0 +1,1 @@
+{"name": "Interface ConstructorDoc", "module": "jdk.javadoc", "package": "com.sun.javadoc", "text": "Represents a constructor of a java class.", "codes": ["@Deprecated(since=\"9\",\n            forRemoval=true)\npublic interface ConstructorDoc\nextends ExecutableMemberDoc"], "fields": [], "methods": []}

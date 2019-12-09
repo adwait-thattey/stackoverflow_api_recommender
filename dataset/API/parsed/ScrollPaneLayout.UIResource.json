@@ -1,0 +1,1 @@
+{"name": "Class ScrollPaneLayout.UIResource", "module": "java.desktop", "package": "javax.swing", "text": "The UI resource version of ScrollPaneLayout.", "codes": ["public static class ScrollPaneLayout.UIResource\nextends ScrollPaneLayout\nimplements UIResource"], "fields": [], "methods": []}

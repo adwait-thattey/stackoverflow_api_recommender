@@ -1,0 +1,1 @@
+{"name": "Annotation Type Timespan", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event field annotation, specifies that the value is a duration.", "codes": ["@Retention(RUNTIME)\n@Target({FIELD,TYPE,METHOD})\npublic @interface Timespan"], "fields": [], "methods": []}

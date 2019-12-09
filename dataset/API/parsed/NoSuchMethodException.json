@@ -1,0 +1,1 @@
+{"name": "Class NoSuchMethodException", "module": "java.base", "package": "java.lang", "text": "Thrown when a particular method cannot be found.", "codes": ["public class NoSuchMethodException\nextends ReflectiveOperationException"], "fields": [], "methods": []}

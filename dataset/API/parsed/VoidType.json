@@ -1,0 +1,1 @@
+{"name": "Interface VoidType", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "The type of all primitive void values\n accessed in the target VM. Calls to Value.type() will return an\n implementor of this interface.", "codes": ["public interface VoidType\nextends Type"], "fields": [], "methods": []}

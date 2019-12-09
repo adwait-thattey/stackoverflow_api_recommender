@@ -1,0 +1,1 @@
+{"name": "Class IllegalCallerException", "module": "java.base", "package": "java.lang", "text": "Thrown to indicate that a method has been called by an inappropriate caller.", "codes": ["public class IllegalCallerException\nextends RuntimeException"], "fields": [], "methods": []}

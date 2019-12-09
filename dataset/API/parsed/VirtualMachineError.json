@@ -1,0 +1,1 @@
+{"name": "Class VirtualMachineError", "module": "java.base", "package": "java.lang", "text": "Thrown to indicate that the Java Virtual Machine is broken or has\n run out of resources necessary for it to continue operating.", "codes": ["public abstract class VirtualMachineError\nextends Error"], "fields": [], "methods": []}

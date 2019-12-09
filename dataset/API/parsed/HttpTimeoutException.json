@@ -1,0 +1,1 @@
+{"name": "Class HttpTimeoutException", "module": "java.net.http", "package": "java.net.http", "text": "Thrown when a response is not received within a specified time period.", "codes": ["public class HttpTimeoutException\nextends IOException"], "fields": [], "methods": []}

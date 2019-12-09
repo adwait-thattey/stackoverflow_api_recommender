@@ -1,0 +1,1 @@
+{"name": "Class PanelUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for Panel.", "codes": ["public abstract class PanelUI\nextends ComponentUI"], "fields": [], "methods": []}

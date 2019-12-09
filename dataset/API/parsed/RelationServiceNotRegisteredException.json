@@ -1,0 +1,1 @@
+{"name": "Class RelationServiceNotRegisteredException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when an access is done to the Relation Service and\n that one is not registered.", "codes": ["public class RelationServiceNotRegisteredException\nextends RelationException"], "fields": [], "methods": []}

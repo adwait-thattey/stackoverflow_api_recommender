@@ -1,0 +1,1 @@
+{"name": "Class ParserConfigurationException", "module": "java.xml", "package": "javax.xml.parsers", "text": "Indicates a serious configuration error.", "codes": ["public class ParserConfigurationException\nextends Exception"], "fields": [], "methods": []}

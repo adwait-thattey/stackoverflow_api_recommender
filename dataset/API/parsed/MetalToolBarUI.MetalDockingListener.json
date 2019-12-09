@@ -1,0 +1,1 @@
+{"name": "Class MetalToolBarUI.MetalDockingListener", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "DockingListener for MetalToolBarUI.", "codes": ["protected class MetalToolBarUI.MetalDockingListener\nextends BasicToolBarUI.DockingListener"], "fields": [], "methods": []}

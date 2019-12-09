@@ -1,0 +1,1 @@
+{"name": "Class BasicDesktopPaneUI.MinimizeAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Handles minimizing an internal frame.", "codes": ["protected class BasicDesktopPaneUI.MinimizeAction\nextends AbstractAction"], "fields": [], "methods": []}

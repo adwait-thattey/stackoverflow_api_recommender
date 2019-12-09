@@ -1,0 +1,1 @@
+{"name": "Class ActionMapUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "A subclass of javax.swing.ActionMap that implements UIResource.\n UI classes which provide an ActionMap should use this class.", "codes": ["public class ActionMapUIResource\nextends ActionMap\nimplements UIResource"], "fields": [], "methods": []}

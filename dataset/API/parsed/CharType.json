@@ -1,0 +1,1 @@
+{"name": "Interface CharType", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "The type of all primitive char values accessed in\n the target VM. Calls to Value.type() will return an\n implementor of this interface.", "codes": ["public interface CharType\nextends PrimitiveType"], "fields": [], "methods": []}

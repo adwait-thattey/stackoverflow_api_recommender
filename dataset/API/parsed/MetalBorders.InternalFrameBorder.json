@@ -1,0 +1,1 @@
+{"name": "Class MetalBorders.InternalFrameBorder", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "The class represents the border of a JInternalFrame.", "codes": ["public static class MetalBorders.InternalFrameBorder\nextends AbstractBorder\nimplements UIResource"], "fields": [], "methods": []}

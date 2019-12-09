@@ -1,0 +1,1 @@
+{"name": "Interface DocTypeTree", "module": "jdk.compiler", "package": "com.sun.source.doctree", "text": "A tree node for a doctype declaration.\n\n \n <!doctype text>", "codes": ["public interface DocTypeTree\nextends DocTree"], "fields": [], "methods": [{"method_name": "getText", "method_sig": "String getText()", "description": "Returns the text of the doctype declaration."}]}

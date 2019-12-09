@@ -1,0 +1,1 @@
+{"name": "Class AboutEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the application is asked to open its about window.", "codes": ["public final class AboutEvent\nextends AppEvent"], "fields": [], "methods": []}

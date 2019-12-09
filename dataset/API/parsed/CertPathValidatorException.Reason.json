@@ -1,0 +1,1 @@
+{"name": "Interface CertPathValidatorException.Reason", "module": "java.base", "package": "java.security.cert", "text": "The reason the validation algorithm failed.", "codes": ["public static interface CertPathValidatorException.Reason\nextends Serializable"], "fields": [], "methods": []}

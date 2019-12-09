@@ -1,0 +1,1 @@
+{"name": "Class RMISecurityException", "module": "java.rmi", "package": "java.rmi", "text": "An RMISecurityException signals that a security exception\n has occurred during the execution of one of\n java.rmi.RMISecurityManager's methods.", "codes": ["@Deprecated\npublic class RMISecurityException\nextends SecurityException"], "fields": [], "methods": []}

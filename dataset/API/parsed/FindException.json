@@ -1,0 +1,1 @@
+{"name": "Class FindException", "module": "java.base", "package": "java.lang.module", "text": "Thrown by a ModuleFinder when an error occurs finding\n a module. Also thrown by Configuration.resolve when resolution fails for observability-related\n reasons.", "codes": ["public class FindException\nextends RuntimeException"], "fields": [], "methods": []}

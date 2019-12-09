@@ -1,0 +1,1 @@
+{"name": "Class AppHiddenEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the application has been hidden or shown.", "codes": ["public final class AppHiddenEvent\nextends AppEvent"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class ToolTipManager.outsideTimerAction", "module": "java.desktop", "package": "javax.swing", "text": "Outside timer action.", "codes": ["protected class ToolTipManager.outsideTimerAction\nextends Object\nimplements ActionListener"], "fields": [], "methods": []}

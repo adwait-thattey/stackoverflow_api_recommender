@@ -1,0 +1,1 @@
+{"name": "Class CancelledKeyException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to use\n a selection key that is no longer valid.", "codes": ["public class CancelledKeyException\nextends IllegalStateException"], "fields": [], "methods": []}

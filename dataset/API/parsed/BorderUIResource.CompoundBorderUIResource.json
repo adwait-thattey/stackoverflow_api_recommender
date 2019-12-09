@@ -1,0 +1,1 @@
+{"name": "Class BorderUIResource.CompoundBorderUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "A compound border UI resource.", "codes": ["public static class BorderUIResource.CompoundBorderUIResource\nextends CompoundBorder\nimplements UIResource"], "fields": [], "methods": []}

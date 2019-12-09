@@ -1,0 +1,1 @@
+{"name": "Class BasicScrollPaneUI.ViewportChangeHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Listener for viewport events.", "codes": ["public class BasicScrollPaneUI.ViewportChangeHandler\nextends Object\nimplements ChangeListener"], "fields": [], "methods": []}

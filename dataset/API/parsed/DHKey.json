@@ -1,0 +1,1 @@
+{"name": "Interface DHKey", "module": "java.base", "package": "javax.crypto.interfaces", "text": "The interface to a Diffie-Hellman key.", "codes": ["public interface DHKey"], "fields": [], "methods": [{"method_name": "getParams", "method_sig": "DHParameterSpec getParams()", "description": "Returns the key parameters."}]}

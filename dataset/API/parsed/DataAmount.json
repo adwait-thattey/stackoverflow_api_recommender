@@ -1,0 +1,1 @@
+{"name": "Annotation Type DataAmount", "module": "jdk.jfr", "package": "jdk.jfr", "text": "Event field annotation, specifies that a value represents an amount of data (for example, bytes).", "codes": ["@Retention(RUNTIME)\n@Target({FIELD,TYPE,METHOD})\npublic @interface DataAmount"], "fields": [], "methods": []}

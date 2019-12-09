@@ -1,0 +1,1 @@
+{"name": "Class BorderUIResource.LineBorderUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "A line border UI resource.", "codes": ["public static class BorderUIResource.LineBorderUIResource\nextends LineBorder\nimplements UIResource"], "fields": [], "methods": []}

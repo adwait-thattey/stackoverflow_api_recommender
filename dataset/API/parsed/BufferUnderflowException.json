@@ -1,0 +1,1 @@
+{"name": "Class BufferUnderflowException", "module": "java.base", "package": "java.nio", "text": "Unchecked exception thrown when a relative get operation reaches\n the source buffer's limit.", "codes": ["public class BufferUnderflowException\nextends RuntimeException"], "fields": [], "methods": []}

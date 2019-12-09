@@ -1,0 +1,1 @@
+{"name": "Class CardException", "module": "java.smartcardio", "package": "javax.smartcardio", "text": "Exception for errors that occur during communication with the\n Smart Card stack or the card itself.", "codes": ["public class CardException\nextends Exception"], "fields": [], "methods": []}

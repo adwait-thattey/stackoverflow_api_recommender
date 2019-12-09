@@ -1,0 +1,1 @@
+{"name": "Interface ByteType", "module": "jdk.jdi", "package": "com.sun.jdi", "text": "The type of all primitive byte values accessed in\n the target VM. Calls to Value.type() will return an\n implementor of this interface.", "codes": ["public interface ByteType\nextends PrimitiveType"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class BasicTreeUI.TreeModelHandler", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Forwards all TreeModel events to the TreeState.", "codes": ["public class BasicTreeUI.TreeModelHandler\nextends Object\nimplements TreeModelListener"], "fields": [], "methods": []}

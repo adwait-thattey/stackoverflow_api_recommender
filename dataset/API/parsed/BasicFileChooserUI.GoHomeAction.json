@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.GoHomeAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Acts on the \"home\" key event or equivalent event.", "codes": ["protected class BasicFileChooserUI.GoHomeAction\nextends AbstractAction"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class NotYetConnectedException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to invoke an I/O\n operation upon a socket channel that is not yet connected.", "codes": ["public class NotYetConnectedException\nextends IllegalStateException"], "fields": [], "methods": []}

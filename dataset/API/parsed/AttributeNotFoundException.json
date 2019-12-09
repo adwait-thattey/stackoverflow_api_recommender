@@ -1,0 +1,1 @@
+{"name": "Class AttributeNotFoundException", "module": "java.management", "package": "javax.management", "text": "The specified attribute does not exist or cannot be retrieved.", "codes": ["public class AttributeNotFoundException\nextends OperationsException"], "fields": [], "methods": []}

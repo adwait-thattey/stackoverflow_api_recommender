@@ -1,0 +1,1 @@
+{"name": "Class JMXProviderException", "module": "java.management", "package": "javax.management.remote", "text": "Exception thrown by JMXConnectorFactory and\n JMXConnectorServerFactory when a provider exists for\n the required protocol but cannot be used for some reason.", "codes": ["public class JMXProviderException\nextends IOException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class UnmodifiableModuleException", "module": "java.instrument", "package": "java.lang.instrument", "text": "Thrown to indicate that a module cannot be modified.", "codes": ["public class UnmodifiableModuleException\nextends RuntimeException"], "fields": [], "methods": []}

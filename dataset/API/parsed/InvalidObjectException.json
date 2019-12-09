@@ -1,0 +1,1 @@
+{"name": "Class InvalidObjectException", "module": "java.base", "package": "java.io", "text": "Indicates that one or more deserialized objects failed validation\n tests.  The argument should provide the reason for the failure.", "codes": ["public class InvalidObjectException\nextends ObjectStreamException"], "fields": [], "methods": []}

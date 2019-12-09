@@ -1,0 +1,1 @@
+{"name": "Class SpinnerUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JSpinner", "codes": ["public abstract class SpinnerUI\nextends ComponentUI"], "fields": [], "methods": []}

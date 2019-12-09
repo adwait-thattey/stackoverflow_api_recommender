@@ -1,0 +1,1 @@
+{"name": "Class ReadOnlyFileSystemException", "module": "java.base", "package": "java.nio.file", "text": "Unchecked exception thrown when an attempt is made to update an object\n associated with a read-only FileSystem.", "codes": ["public class ReadOnlyFileSystemException\nextends UnsupportedOperationException"], "fields": [], "methods": []}

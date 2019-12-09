@@ -1,0 +1,1 @@
+{"name": "Interface CommentTree", "module": "jdk.compiler", "package": "com.sun.source.doctree", "text": "An embedded HTML comment.\n\n \n <!-- text --> ", "codes": ["public interface CommentTree\nextends DocTree"], "fields": [], "methods": [{"method_name": "getBody", "method_sig": "String getBody()", "description": "Returns the text of the comment."}]}

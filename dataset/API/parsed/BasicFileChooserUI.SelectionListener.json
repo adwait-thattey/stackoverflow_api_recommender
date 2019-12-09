@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.SelectionListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "A selection listener.", "codes": ["protected class BasicFileChooserUI.SelectionListener\nextends Object\nimplements ListSelectionListener"], "fields": [], "methods": []}

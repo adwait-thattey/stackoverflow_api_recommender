@@ -1,0 +1,1 @@
+{"name": "Class ExecutionException", "module": "java.base", "package": "java.util.concurrent", "text": "Exception thrown when attempting to retrieve the result of a task\n that aborted by throwing an exception. This exception can be\n inspected using the Throwable.getCause() method.", "codes": ["public class ExecutionException\nextends Exception"], "fields": [], "methods": []}

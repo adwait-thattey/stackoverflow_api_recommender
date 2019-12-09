@@ -1,0 +1,1 @@
+{"name": "Class InvalidKeySpecException", "module": "java.base", "package": "java.security.spec", "text": "This is the exception for invalid key specifications.", "codes": ["public class InvalidKeySpecException\nextends GeneralSecurityException"], "fields": [], "methods": []}

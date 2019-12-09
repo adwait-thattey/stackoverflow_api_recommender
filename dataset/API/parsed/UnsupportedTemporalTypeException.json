@@ -1,0 +1,1 @@
+{"name": "Class UnsupportedTemporalTypeException", "module": "java.base", "package": "java.time.temporal", "text": "UnsupportedTemporalTypeException indicates that a ChronoField or ChronoUnit is\n not supported for a Temporal class.", "codes": ["public class UnsupportedTemporalTypeException\nextends DateTimeException"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class MenuBarUI", "module": "java.desktop", "package": "javax.swing.plaf", "text": "Pluggable look and feel interface for JMenuBar.", "codes": ["public abstract class MenuBarUI\nextends ComponentUI"], "fields": [], "methods": []}

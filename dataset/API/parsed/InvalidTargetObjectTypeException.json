@@ -1,0 +1,1 @@
+{"name": "Class InvalidTargetObjectTypeException", "module": "java.management", "package": "javax.management.modelmbean", "text": "Exception thrown when an invalid target object type is specified.\n\n\n The serialVersionUID of this class is 1190536278266811217L.", "codes": ["public class InvalidTargetObjectTypeException\nextends Exception"], "fields": [], "methods": []}

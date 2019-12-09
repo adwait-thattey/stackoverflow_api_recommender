@@ -1,0 +1,1 @@
+{"name": "Class BasicFileChooserUI.ChangeToParentDirectoryAction", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Change to parent directory action.", "codes": ["protected class BasicFileChooserUI.ChangeToParentDirectoryAction\nextends AbstractAction"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class XPathFactoryConfigurationException", "module": "java.xml", "package": "javax.xml.xpath", "text": "XPathFactoryConfigurationException represents\n a configuration error in a XPathFactory environment.", "codes": ["public class XPathFactoryConfigurationException\nextends XPathException"], "fields": [], "methods": []}

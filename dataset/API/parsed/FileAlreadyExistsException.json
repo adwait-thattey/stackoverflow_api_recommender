@@ -1,0 +1,1 @@
+{"name": "Class FileAlreadyExistsException", "module": "java.base", "package": "java.nio.file", "text": "Checked exception thrown when an attempt is made to create a file or\n directory and a file of that name already exists.", "codes": ["public class FileAlreadyExistsException\nextends FileSystemException"], "fields": [], "methods": []}

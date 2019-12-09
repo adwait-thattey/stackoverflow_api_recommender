@@ -1,0 +1,1 @@
+{"name": "Class AtomicMoveNotSupportedException", "module": "java.base", "package": "java.nio.file", "text": "Checked exception thrown when a file cannot be moved as an atomic file system\n operation.", "codes": ["public class AtomicMoveNotSupportedException\nextends FileSystemException"], "fields": [], "methods": []}

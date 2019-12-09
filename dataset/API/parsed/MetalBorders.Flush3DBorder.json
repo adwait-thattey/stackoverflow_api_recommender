@@ -1,0 +1,1 @@
+{"name": "Class MetalBorders.Flush3DBorder", "module": "java.desktop", "package": "javax.swing.plaf.metal", "text": "The class represents the 3D border.", "codes": ["public static class MetalBorders.Flush3DBorder\nextends AbstractBorder\nimplements UIResource"], "fields": [], "methods": []}

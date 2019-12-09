@@ -1,0 +1,1 @@
+{"name": "Class FontFormatException", "module": "java.desktop", "package": "java.awt", "text": "Thrown by method createFont in the Font class to indicate\n that the specified font is bad.", "codes": ["public class FontFormatException\nextends Exception"], "fields": [], "methods": []}

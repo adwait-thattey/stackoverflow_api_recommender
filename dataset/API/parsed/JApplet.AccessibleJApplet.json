@@ -1,0 +1,1 @@
+{"name": "Class JApplet.AccessibleJApplet", "module": "java.desktop", "package": "javax.swing", "text": "This class implements accessibility support for the\n JApplet class.", "codes": ["protected class JApplet.AccessibleJApplet\nextends Applet.AccessibleApplet"], "fields": [], "methods": []}

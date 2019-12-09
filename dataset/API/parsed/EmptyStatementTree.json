@@ -1,0 +1,1 @@
+{"name": "Interface EmptyStatementTree", "module": "jdk.scripting.nashorn", "package": "jdk.nashorn.api.tree", "text": "A tree node for an empty (skip) statement.\n\n For example:\n \n    ;\n ", "codes": ["@Deprecated(since=\"11\",\n            forRemoval=true)\npublic interface EmptyStatementTree\nextends StatementTree"], "fields": [], "methods": []}

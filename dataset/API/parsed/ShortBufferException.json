@@ -1,0 +1,1 @@
+{"name": "Class ShortBufferException", "module": "java.base", "package": "javax.crypto", "text": "This exception is thrown when an output buffer provided by the user\n is too short to hold the operation result.", "codes": ["public class ShortBufferException\nextends GeneralSecurityException"], "fields": [], "methods": []}

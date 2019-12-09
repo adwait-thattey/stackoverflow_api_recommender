@@ -1,0 +1,1 @@
+{"name": "Class NonReadableChannelException", "module": "java.base", "package": "java.nio.channels", "text": "Unchecked exception thrown when an attempt is made to read\n from a channel that was not originally opened for reading.", "codes": ["public class NonReadableChannelException\nextends IllegalStateException"], "fields": [], "methods": []}

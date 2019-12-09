@@ -1,0 +1,1 @@
+{"name": "Class BorderUIResource.BevelBorderUIResource", "module": "java.desktop", "package": "javax.swing.plaf", "text": "A bevel border UI resource.", "codes": ["public static class BorderUIResource.BevelBorderUIResource\nextends BevelBorder\nimplements UIResource"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class NotDirectoryException", "module": "java.base", "package": "java.nio.file", "text": "Checked exception thrown when a file system operation, intended for a\n directory, fails because the file is not a directory.", "codes": ["public class NotDirectoryException\nextends FileSystemException"], "fields": [], "methods": []}

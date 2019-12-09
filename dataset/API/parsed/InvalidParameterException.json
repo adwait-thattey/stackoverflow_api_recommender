@@ -1,0 +1,1 @@
+{"name": "Class InvalidParameterException", "module": "java.base", "package": "java.security", "text": "This exception, designed for use by the JCA/JCE engine classes,\n is thrown when an invalid parameter is passed\n to a method.", "codes": ["public class InvalidParameterException\nextends IllegalArgumentException"], "fields": [], "methods": []}

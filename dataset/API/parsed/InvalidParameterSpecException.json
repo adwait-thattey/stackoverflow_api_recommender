@@ -1,0 +1,1 @@
+{"name": "Class InvalidParameterSpecException", "module": "java.base", "package": "java.security.spec", "text": "This is the exception for invalid parameter specifications.", "codes": ["public class InvalidParameterSpecException\nextends GeneralSecurityException"], "fields": [], "methods": []}

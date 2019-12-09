@@ -1,0 +1,1 @@
+{"name": "Interface ReferenceType", "module": "java.compiler", "package": "javax.lang.model.type", "text": "Represents a reference type.\n These include class and interface types, array types, type variables,\n and the null type.", "codes": ["public interface ReferenceType\nextends TypeMirror"], "fields": [], "methods": []}

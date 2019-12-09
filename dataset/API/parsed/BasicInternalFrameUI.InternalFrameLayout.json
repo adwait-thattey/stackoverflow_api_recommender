@@ -1,0 +1,1 @@
+{"name": "Class BasicInternalFrameUI.InternalFrameLayout", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Internal frame layout.", "codes": ["public class BasicInternalFrameUI.InternalFrameLayout\nextends Object\nimplements LayoutManager"], "fields": [], "methods": []}

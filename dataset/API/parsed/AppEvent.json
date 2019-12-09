@@ -1,0 +1,1 @@
+{"name": "Class AppEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "AppEvents are sent to listeners and handlers installed on the\n Desktop instance of the current desktop context.", "codes": ["public class AppEvent\nextends EventObject"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class RoleInfoNotFoundException", "module": "java.management", "package": "javax.management.relation", "text": "This exception is raised when there is no role info with given name in a\n given relation type.", "codes": ["public class RoleInfoNotFoundException\nextends RelationException"], "fields": [], "methods": []}

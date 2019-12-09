@@ -1,0 +1,1 @@
+{"name": "Class ServiceNotFoundException", "module": "java.management", "package": "javax.management", "text": "Represents exceptions raised when a requested service is not supported.", "codes": ["public class ServiceNotFoundException\nextends OperationsException"], "fields": [], "methods": []}

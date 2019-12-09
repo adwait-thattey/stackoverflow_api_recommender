@@ -1,0 +1,1 @@
+{"name": "Class IllegalReceiveException", "module": "jdk.sctp", "package": "com.sun.nio.sctp", "text": "Unchecked exception thrown when an attempt is made to invoke the\n receive method of SctpChannel or SctpMultiChannel\n from a notification handler.", "codes": ["public class IllegalReceiveException\nextends IllegalStateException"], "fields": [], "methods": []}

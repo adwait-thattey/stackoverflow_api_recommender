@@ -1,0 +1,1 @@
+{"name": "Class InternalError", "module": "java.base", "package": "java.lang", "text": "Thrown to indicate some unexpected internal error has occurred in\n the Java Virtual Machine.", "codes": ["public class InternalError\nextends VirtualMachineError"], "fields": [], "methods": []}

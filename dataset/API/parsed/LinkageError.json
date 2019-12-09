@@ -1,0 +1,1 @@
+{"name": "Class LinkageError", "module": "java.base", "package": "java.lang", "text": "Subclasses of LinkageError indicate that a class has\n some dependency on another class; however, the latter class has\n incompatibly changed after the compilation of the former class.", "codes": ["public class LinkageError\nextends Error"], "fields": [], "methods": []}

@@ -1,0 +1,1 @@
+{"name": "Class AppForegroundEvent", "module": "java.desktop", "package": "java.awt.desktop", "text": "Event sent when the application has become the foreground app, and when it is\n no longer the foreground app.", "codes": ["public final class AppForegroundEvent\nextends AppEvent"], "fields": [], "methods": []}

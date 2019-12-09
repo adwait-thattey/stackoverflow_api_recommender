@@ -1,0 +1,1 @@
+{"name": "Class BasicScrollPaneUI.VSBChangeListener", "module": "java.desktop", "package": "javax.swing.plaf.basic", "text": "Vertical scrollbar listener.", "codes": ["public class BasicScrollPaneUI.VSBChangeListener\nextends Object\nimplements ChangeListener"], "fields": [], "methods": []}
