@@ -167,6 +167,59 @@ def index_question(question: models.Question):
     return ques_index
     # print(content)
 
+@utils.enforce_types(models.APIDoc)
+def index_api_doc(api: models.APIDoc):
+
+    api_index = models.APIDocIndex(api)
+
+    api_text_index = index_text(api.text)
+    api_combined_text = api.text
+
+    api_all_code_snippets = api.codes
+    api_all_code_snippets.extend([api.name, api.module, api.package])
+    api_code_index = index_code_snippets(api_all_code_snippets)
+
+    api_combined_code_snippets = api_all_code_snippets
+
+    api_index.text_index.vector = api_text_index
+    api_index.text_index.calc_magnitude()
+
+    api_index.code_index.vector = api_code_index
+    api_index.code_index.calc_magnitude()
+
+
+    for method in api.methods:
+        method_index = models.MethodIndex(api.name)
+
+        method_codes = [method.method_name,method.method_sig]
+        method_code_index = index_code_snippets(method_codes)
+        api_combined_code_snippets.extend(method_codes)
+
+        method_text = method.description
+        method_text_index = index_text(method_text)
+        api_combined_text = api_combined_text + " " + method_text
+
+
+        method_index.text_index.vector = method_text_index
+        method_index.text_index.calc_magnitude()
+
+        method_index.code_index.vector = method_code_index
+        method_index.code_index.calc_magnitude()
+
+        api_index.methods_index.append(method_index)
+
+    api_combined_text_index = index_text(api_combined_text)
+    api_combined_code_snippets_index = index_code_snippets(api_combined_code_snippets)
+
+    api_index.combined_text_index.vector = api_combined_text_index
+    api_index.combined_code_index.vector = api_combined_code_snippets_index
+
+    if api.name not in shared.API_SEGMENT_MAP:
+        shared.TOTAL_API_DOCS += 1
+        shared.TOTAL_API_METHODS += len(api.methods)
+
+    return api_index
+
 
 if __name__ == "__main__":
     from starter import init, end

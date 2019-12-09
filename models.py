@@ -168,6 +168,22 @@ class QuestionIndex:
         self.others_index = Index()
         self.answers_index = list()
 
+class MethodIndex:
+    def __init__(self,doc_name):
+        self.api_name = doc_name
+        self.text_index = Index()
+        self.code_index = Index()
+
+class APIDocIndex:
+    def __init__(self, doc):
+        self.name = doc.name
+        self.text_index = Index()
+        self.code_index = Index()
+        self.methods_index = list()
+        self.combined_text_index = Index()
+        self.combined_code_index = Index()
+
+
 class APIField:
     def __init__(self, field_name, field_sig, description):
         self.field_name = CodeSnippet("java", field_name)
@@ -263,9 +279,9 @@ class APIDoc:
     @classmethod
     def from_json(cls, json_string):
         # parse json and return object of class
-        print('In from_json..')
+        # print('In from_json..')
         data = json.loads(json_string)
-        print(data)
+        # print(data)
         obj = cls(data['name'],data['module'],data['package'],data['text'],data['codes'])
 
         for field in data['fields']:

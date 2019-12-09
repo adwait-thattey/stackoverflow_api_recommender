@@ -105,7 +105,7 @@ def parse_API_doc(doc_soup: BeautifulSoup):
     #         apiDocObject.add_method(method_name=method_name, method_signature=method_sig, description=desc)
 
     if(doc_soup.find('a',attrs={'id':'method.detail'})):
-        print('Fetching method details')
+        # print('Fetching method details')
         method_details = doc_soup.find('a',attrs={'id':'method.detail'}).parent.findAll('ul',attrs={'class':'blockList'})
         # print(method_details)
         for row in method_details:
@@ -113,7 +113,7 @@ def parse_API_doc(doc_soup: BeautifulSoup):
             method_name = row.find('h4').text
             method_sig = row.find('pre',attrs={'class':'methodSignature'}).text
             desc = row.find('div',attrs={'class':'block'}).text
-            print(method_sig)
+            # print(method_sig)
             apiDocObject.add_method(method_name=method_name, method_signature=method_sig, description=desc)
 
         last_detail = doc_soup.find('a',attrs={'id':'method.detail'}).parent.find('ul',attrs={'class':'blockListLast'})
@@ -121,13 +121,13 @@ def parse_API_doc(doc_soup: BeautifulSoup):
         method_name = last_detail.find('h4').text
         method_sig = last_detail.find('pre',attrs={'class':'methodSignature'}).text
         desc = last_detail.find('div',attrs={'class':'block'}).text
-        print(method_sig)
+        # print(method_sig)
         apiDocObject.add_method(method_name=method_name, method_signature=method_sig, description=desc)
 
     print('\n---------')
 
     if(doc_soup.find('a',attrs={'id':'field.detail'})):
-        print('Fetching field details')
+        # print('Fetching field details')
         field_details = doc_soup.find('a',attrs={'id':'field.detail'}).parent.findAll('ul',attrs={'class':'blockList'})
         # print(method_details)
         for row in field_details:
@@ -136,14 +136,14 @@ def parse_API_doc(doc_soup: BeautifulSoup):
             field_sig = row.find('pre').text
             desc = row.find('div',attrs={'class':'block'}).text
             apiDocObject.add_field(field_name=field_name, field_signature=field_sig, description=desc)
-            print(field_sig)
+            # print(field_sig)
 
         last_detail = doc_soup.find('a',attrs={'id':'field.detail'}).parent.find('ul',attrs={'class':'blockListLast'})
         # print(last_detail)
         field_name = last_detail.find('h4').text
         field_sig = last_detail.find('pre').text
         desc = last_detail.find('div',attrs={'class':'block'}).text
-        print(field_sig)
+        # print(field_sig)
         # print(desc)
         apiDocObject.add_field(field_name=field_name, field_signature=field_sig, description=desc)
     #
@@ -171,11 +171,11 @@ def parse_API_doc_driver(file):
 
     soupObject = BeautifulSoup(doc_raw,'html.parser')
     parsedDoc = parse_API_doc(soupObject)
-    print('Checking in parser.')
-    
-    print(parsedDoc.methods)
-    for method in parsedDoc.methods:
-        print(method.method_sig.snippet)
+    # print('Checking in parser.')
+
+    # print(parsedDoc.methods)
+    # for method in parsedDoc.methods:
+        # print(method.method_sig.snippet)
     # print(new_doc.text)
     # print('\n\n\n\n\n\n\n\n')
     # print(parsedDoc.__dict__)

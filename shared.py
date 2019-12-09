@@ -2,6 +2,7 @@ VECTOR_SPACE = dict()
 INDEXED_QUESTIONS = dict()
 STOP_WORDS = []
 QUESTION_SEGMENT_MAP = dict()  # question_id vs segment_id
+API_SEGMENT_MAP = dict()
 READY_THREADS_COUNT = 0
 ACTIVE_THREADS_COUNT = 0
 ACTIVE_QUERIES = set()

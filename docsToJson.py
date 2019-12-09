@@ -9,36 +9,9 @@ parsed_path = './dataset/API/parsed/'
 # Ignore css, zip, gif,
 
 count = 0
-# fname = "./dataset/API/raw/docs/api/jdk.jsobject/netscape/javascript/JSException.html"
-# jsonString = parser.parse_API_doc_driver(fname)
-# print(jsonString)
-#
-# new_doc = models.APIDoc.from_json(jsonString)
-#
-# for method in new_doc.methods:
-#     print(method.method_sig.snippet)
-# print(new_doc.text)
-#
-# filename = os.path.join(fname.replace('.html','.json'))
-#
-# f = open(filename, "w")
-# f.write(jsonString)
-# f.close()
-# print(filename+' successful !')
-#
-#
-#
-#
-#
-
 
 for (dirName, subdirList, fileList) in os.walk(raw_path, topdown=False):
-    # print(dirName)
-    # print(subdirList)
-    # print(fileList)
-    # print('-------')
 
-    # count+=len(fileList)
     for fname in fileList:
         # print(type(fname))
         if(re.search('.html$',fname) or re.search('.HTML$',fname)):
