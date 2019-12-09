@@ -35,7 +35,7 @@ class Index:
         self._is_magnitude_fresh = False
 
     def __len__(self):
-        return self._magnitude
+        return len(self._vector)
 
     @property
     def magnitude(self):
@@ -199,5 +199,7 @@ class QuestionIndex:
         self.title_index = Index()
         self.text_index = Index()
         self.code_index = Index()
+        self.title_text_index = Index()
         self.others_index = Index()
         self.answers_index = list()
+        self.full_text_index = Index()

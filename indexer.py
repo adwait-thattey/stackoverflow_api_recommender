@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 import models, ranking_models
 import shared
 import utils
@@ -7,6 +9,18 @@ import pickler
 import log
 
 import constants
+
+
+def combine_title_text_index(text_index: models.Index, title_index: models.Index):
+    combined_index = deepcopy(text_index)
+
+    for term in title_index.vector:
+        if term not in combined_index.vector:
+            combined_index.vector[term] = 0
+
+        combined_index.vector[term] += 2 * title_index.vector[term]
+
+    return combined_index
 
 
 @utils.enforce_types(models.QuestionIndex, set)
@@ -147,6 +161,9 @@ def index_question(question: models.Question):
     ques_index.code_index.vector = code_index
     ques_index.code_index.calc_magnitude()
 
+    ques_index.title_text_index = combine_title_text_index(ques_index.text_index, ques_index.title_index)
+    ques_index.title_text_index.calc_magnitude()
+
     for ans in question.answers:
         ans_index = models.AnswerIndex(qid=question.id)
         text_index = index_text(ans.text)
@@ -160,12 +177,45 @@ def index_question(question: models.Question):
 
         ques_index.answers_index.append(ans_index)
 
+    combined_text = [question.title, question.text]
+    for ans in question.answers:
+        combined_text.append(ans.text)
+
+    combined_index_vector = index_text("\n".join(combined_text))
+
+    ques_index.full_text_index.vector = combined_index_vector
+    ques_index.full_text_index.calc_magnitude()
+
     if question.id not in shared.QUESTION_SEGMENT_MAP:
         shared.TOTAL_QUESTIONS += 1
         shared.TOTAL_ANSWERS += len(question.answers)
 
     return ques_index
     # print(content)
+
+
+@utils.enforce_types(ranking_models.UserQuery)
+def index_query(user_query: ranking_models.UserQuery):
+    query_index = ranking_models.UserQueryIndex(user_query.id)
+
+    title_iv = index_text(user_query.title)
+    text_iv = index_text(user_query.text)
+    codes_iv = index_code_snippets(user_query.codes)
+
+
+    query_index.title_index.vector = title_iv
+    query_index.title_index.calc_magnitude()
+
+    query_index.text_index.vector = text_iv
+    query_index.text_index.calc_magnitude()
+
+    query_index.code_index.vector = codes_iv
+    query_index.code_index.calc_magnitude()
+
+    query_index.title_text_index = combine_title_text_index(query_index.text_index, query_index.title_index)
+    query_index.title_text_index.calc_magnitude()
+
+    return query_index
 
 
 if __name__ == "__main__":

@@ -225,6 +225,7 @@ class UserQueryIndex:
         self.id = query_id
         self.title_index = models.Index()
         self.text_index = models.Index()
+        self.title_text_index = models.Index()
         self.code_index = models.Index()
         self.others_index = models.Index()
 

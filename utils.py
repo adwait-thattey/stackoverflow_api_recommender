@@ -51,3 +51,16 @@ def get_new_question_segment_id():
         start += 1
 
     return start
+
+
+def get_all_question_segment_lists():
+    file_list = [f for f in os.listdir(constants.pickled_questions_dir) if
+                 os.path.isfile(os.path.join(constants.pickled_questions_dir, f))]
+
+    file_list = [f.strip('.pickle') for f in file_list if f.split('.')[0].isdigit()]
+
+    return file_list
+
+
+if __name__ == "__main__":
+    print(get_all_question_segment_lists())
