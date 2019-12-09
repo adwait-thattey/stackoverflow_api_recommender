@@ -14,3 +14,9 @@ questions_per_segment = 100
 debug_print_len = 25
 question_title_weight = 2
 log_base = 10
+
+# postgres params
+postgres_host = "127.0.0.1"
+postgres_db = "ir"
+postgres_user = "ir_admin"
+postgres_password = "minda"

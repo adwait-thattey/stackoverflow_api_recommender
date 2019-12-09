@@ -114,6 +114,18 @@ def read_shared_data():
         log.warn(f" Question-Segment Map pickle file not found", module="pickler")
         shared.QUESTION_SEGMENT_MAP = dict()
 
+    try:
+        log.log(f" Reading Term Questions Dict", module="pickler")
+        with open(os.path.join(constants.pickle_data_dir, "tqd" + constants.pickle_files_extension), 'rb') as f:
+            shared.TERM_QUESTIONS_DICT = pickle.load(f)
+
+        log.log(f" Reading Term API Dict", module="pickler")
+        with open(os.path.join(constants.pickle_data_dir, "tad" + constants.pickle_files_extension), 'rb') as f:
+            shared.TERM_API_DOC_DICT = pickle.load(f)
+
+    except FileNotFoundError:
+        log.fail(f"Term Questions or API Dict Pickle object not found", module="pickler")
+
 
 def write_shared_data():
     log.log(f" Writing question segment map", module="pickler")
@@ -129,6 +141,14 @@ def write_shared_data():
     log.log("Writing total counts")
     with open(os.path.join(constants.pickle_data_dir, "counts" + constants.pickle_files_extension), 'wb') as f:
         pickle.dump(count, f)
+
+    log.log(f"Writing Term Questions Dict", module="pickler")
+    with open(os.path.join(constants.pickle_data_dir, "tqd" + constants.pickle_files_extension), 'wb') as f:
+        pickle.dump(shared.TERM_QUESTIONS_DICT, f)
+
+    log.log(f"Writing API DOCS Dict", module="pickler")
+    with open(os.path.join(constants.pickle_data_dir, "tad" + constants.pickle_files_extension), 'wb') as f:
+        pickle.dump(shared.TERM_API_DOC_DICT, f)
 
 
 def write_tdf_idf():

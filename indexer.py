@@ -160,7 +160,7 @@ def index_question(question: models.Question):
 
         ques_index.answers_index.append(ans_index)
 
-    if ques_index not in shared.QUESTION_SEGMENT_MAP:
+    if question.id not in shared.QUESTION_SEGMENT_MAP:
         shared.TOTAL_QUESTIONS += 1
         shared.TOTAL_ANSWERS += len(question.answers)
 
