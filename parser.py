@@ -6,7 +6,7 @@ import utils
 
 
 def parse_answer(answer_soup: BeautifulSoup):
-    answer_soup.pre
+    
     answer_content_soup = answer_soup.find('div', attrs={'class': 'post-text'})
     answer_upvote_count_soup = answer_soup.find('div', attrs={'itemprop': 'upvoteCount'})
     upvotes = 0
