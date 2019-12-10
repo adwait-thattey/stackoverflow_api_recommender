@@ -194,6 +194,15 @@ def index_question(question: models.Question):
     # print(content)
 
 
+@utils.enforce_types(models.Index, dict)
+def normalize_question_index_with_idf(index: models.Index, idf_vector: dict):
+    for term in index.vector:
+        if term in idf_vector:
+            index.vector[term] *= idf_vector[term]
+        else:
+            index.vector[term] = 0
+
+
 @utils.enforce_types(ranking_models.UserQuery)
 def index_query(user_query: ranking_models.UserQuery):
     query_index = ranking_models.UserQueryIndex(user_query.id)
@@ -202,14 +211,16 @@ def index_query(user_query: ranking_models.UserQuery):
     text_iv = index_text(user_query.text)
     codes_iv = index_code_snippets(user_query.codes)
 
-
     query_index.title_index.vector = title_iv
+    normalize_question_index_with_idf(query_index.title_index, shared.INVERSE_DOCUMENT_FREQUENCY.qa)
     query_index.title_index.calc_magnitude()
 
     query_index.text_index.vector = text_iv
+    normalize_question_index_with_idf(query_index.text_index, shared.INVERSE_DOCUMENT_FREQUENCY.qa)
     query_index.text_index.calc_magnitude()
 
     query_index.code_index.vector = codes_iv
+    normalize_question_index_with_idf(query_index.code_index, shared.INVERSE_DOCUMENT_FREQUENCY.qa)
     query_index.code_index.calc_magnitude()
 
     query_index.title_text_index = combine_title_text_index(query_index.text_index, query_index.title_index)
