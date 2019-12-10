@@ -12,11 +12,12 @@ pickled_questions_dir = "bin/data/questions"
 pickled_api_dir = "bin/data/docs"
 pickle_files_extension = ".pickle"
 questions_per_segment = 100
-apis_per_segment = 200
+apis_per_segment = 300
 debug_print_len = 25
 question_title_weight = 2
 log_base = 10
 
+max_parallel_threads = 100
 # postgres params
 postgres_host = "127.0.0.1"
 postgres_db = "ir"

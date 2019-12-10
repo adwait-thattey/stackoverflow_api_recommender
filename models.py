@@ -35,7 +35,7 @@ class Index:
         self._is_magnitude_fresh = False
 
     def __len__(self):
-        return self._magnitude
+        return len(self._vector)
 
     @property
     def magnitude(self):
@@ -165,8 +165,10 @@ class QuestionIndex:
         self.title_index = Index()
         self.text_index = Index()
         self.code_index = Index()
+        self.title_text_index = Index()
         self.others_index = Index()
         self.answers_index = list()
+        self.full_text_index = Index()
 
 class MethodIndex:
     def __init__(self,doc_name):
@@ -208,7 +210,7 @@ class APIField:
         # parse json and return object of class
         obj = json.loads(json_string)
         return cls(obj['field_name'],obj['field_sig'],obj['description'])
-        return None
+
 
 class APIMethod:
     def __init__(self, method_name, method_sig, description):

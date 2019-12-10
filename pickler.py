@@ -7,6 +7,28 @@ import constants
 import utils
 
 
+def read_api_docs_segment(segment_id):
+    log.log(f"Reading api segment {segment_id}", module="pickler")
+    questions_dict = None
+    with open(os.path.join(constants.pickled_api_dir, str(segment_id) + constants.pickle_files_extension),
+              'rb') as f:
+        questions_dict = pickle.load(f)
+
+    if questions_dict is not None:
+
+        return questions_dict
+
+    else:
+        raise ValueError(f"[DEBUG] [PICKLER] Unable to read questions segment")
+
+
+def write_api_docs_segment(segment_id, api_dict):
+    log.log(f"Writing api segment {segment_id}", module="pickler")
+    with open(os.path.join(constants.pickled_api_dir, str(segment_id) + constants.pickle_files_extension),
+              'wb') as f:
+        pickle.dump(api_dict, f)
+
+
 def read_questions_segment(segment_id):
     log.log(f"Reading questions segment {segment_id}", module="pickler")
     questions_dict = None
@@ -20,6 +42,68 @@ def read_questions_segment(segment_id):
 
     else:
         raise ValueError(f"[DEBUG] [PICKLER] Unable to read questions segment")
+
+
+def write_api_index(api_dict=None):
+    if api_dict is None:
+        api_dict = shared.INDEXED_APIS
+
+    new_segments = 0
+    modified_segments = 0
+    pickled = set()
+    log.log(f"Writing questions index to pickles ", module="pickler")
+
+    new_seg_api_names = set()
+    for api_name in api_dict:
+        if api_name in pickled:
+            continue
+
+        if api_name in shared.API_SEGMENT_MAP:
+            # api is already indexed. update index
+            segment = shared.API_SEGMENT_MAP[api_name]
+            try:
+                segment_apis = read_api_docs_segment(segment)
+                # get list of apis in api_dict which are not yet indexed and in this segment
+                api_seg_names = [apiname for apiname in api_dict if api_name not in pickled and apiname in segment_apis]
+
+                for i in api_seg_names:
+                    segment_apis[i] = api_dict[i]
+
+                write_api_docs_segment(segment, segment_apis)
+                modified_segments += 1
+                pickled.update(api_seg_names)
+            except FileNotFoundError:
+                log.warn(f"Segment {segment} in map but does not exist. Removing", module="pickler")
+                shared.API_SEGMENT_MAP = {k: v for (k, v) in shared.API_SEGMENT_MAP.items() if v != segment}
+
+        if api_name not in shared.API_SEGMENT_MAP:
+            # question is not indexed yet. Create new segments
+            new_seg_api_names.add(api_name)
+            pickled.add(api_name)
+            if len(new_seg_api_names) >= constants.apis_per_segment:
+                # write this seg
+                new_seg_apis = {apiname: api_dict[apiname] for apiname in new_seg_api_names}
+                new_seg_id = utils.get_new_api_segment_id()
+                write_api_docs_segment(new_seg_id, new_seg_apis)
+                new_segments += 1
+                for apiname in new_seg_api_names:
+                    shared.API_SEGMENT_MAP[apiname] = new_seg_id
+
+                new_seg_api_names.clear()
+
+    if new_seg_api_names:
+        # some questions are yet to be written
+        new_seg_apis = {apiname: api_dict[apiname] for apiname in new_seg_api_names}
+        new_seg_id = utils.get_new_api_segment_id()
+        write_api_docs_segment(new_seg_id, new_seg_apis)
+        new_segments += 1
+        for apiname in new_seg_api_names:
+            shared.API_SEGMENT_MAP[apiname] = new_seg_id
+
+        new_seg_api_names.clear()
+
+    log.log(f"APIs Written to disk. Modified Segments:{modified_segments},  New Segments:{new_segments}",
+            module="pickler")
 
 
 def write_questions_segment(segment_id, questions_dict):
@@ -91,7 +175,24 @@ def write_questions_index(questions_dict=None):
             module="pickler")
 
 
-def read_shared_data():
+def read_api_shared_data():
+    log.log(f" Reading api segment map", module="pickler")
+    try:
+        with open(os.path.join(constants.pickled_api_dir, "apismap" + constants.pickle_files_extension), 'rb') as f:
+            shared.API_SEGMENT_MAP = pickle.load(f)
+
+    except FileNotFoundError:
+        log.warn(f" API-Segment Map pickle file not found", module="pickler")
+        shared.API_SEGMENT_MAP = dict()
+
+
+def write_api_shared_data():
+    log.log(f" Writing api segment map", module="pickler")
+    with open(os.path.join(constants.pickled_api_dir, "apismap" + constants.pickle_files_extension), 'wb') as f:
+        pickle.dump(shared.API_SEGMENT_MAP, f)
+
+
+def read_questions_shared_data():
     log.log(f" Reading question segment map", module="pickler")
     try:
         with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'rb') as f:
@@ -127,7 +228,7 @@ def read_shared_data():
         log.fail(f"Term Questions or API Dict Pickle object not found", module="pickler")
 
 
-def write_shared_data():
+def write_questions_shared_data():
     log.log(f" Writing question segment map", module="pickler")
     with open(os.path.join(constants.pickled_questions_dir, "qsmap" + constants.pickle_files_extension), 'wb') as f:
         pickle.dump(shared.QUESTION_SEGMENT_MAP, f)

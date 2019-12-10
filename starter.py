@@ -1,4 +1,4 @@
-from pickler import read_shared_data, write_shared_data, read_tdf_idf, write_tdf_idf
+from pickler import read_questions_shared_data, write_questions_shared_data, read_tdf_idf, write_tdf_idf, read_api_shared_data, write_api_shared_data
 from utils import gen_stopwords
 import log
 
@@ -10,7 +10,9 @@ def init():
         - init stop words
     """
     log.log(f"Running init tasks", module="starter")
-    read_shared_data()
+
+    read_api_shared_data()
+    read_questions_shared_data()
     read_tdf_idf()
     gen_stopwords()
 
@@ -23,5 +25,6 @@ def end():
     """
     log.log(f" Running teardown tasks", module="starter")
 
-    write_shared_data()
+    write_api_shared_data()
+    write_questions_shared_data()
     write_tdf_idf()

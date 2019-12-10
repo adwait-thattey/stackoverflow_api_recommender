@@ -1,6 +1,9 @@
+import copy
 import heapq
+import threading
 
 import constants
+import log
 import models
 import utils
 import shared
@@ -46,10 +49,16 @@ class GenericCosines:
         self.cosine_sum = float(0)
         self.type = type
 
+        self._lock = threading.Lock()
+
     def insert_cosine(self, qid, cosine):
         cosine_obj = Cosine(obj_id=qid, cosine=cosine, type="question")
-        self.cosines.push(cosine_obj)
-        self.cosine_sum += cosine
+        self._lock.acquire()
+        try:
+            self.cosines.push(cosine_obj)
+            self.cosine_sum += cosine
+        finally:
+            self._lock.release()
 
     def get_top(self):
         while len(self.cosines) > 0:
@@ -60,6 +69,7 @@ class GenericCosines:
     @property
     def avg_cosine(self):
         return self.cosine_sum / len(self.cosines)
+
 
 
 class QuestionCosines:
@@ -225,6 +235,7 @@ class UserQueryIndex:
         self.id = query_id
         self.title_index = models.Index()
         self.text_index = models.Index()
+        self.title_text_index = models.Index()
         self.code_index = models.Index()
         self.others_index = models.Index()
 
@@ -241,3 +252,13 @@ class UserQuery:
         self.tags = tags
         self.query_index = UserQueryIndex(self.id)
         self.ranker = QueryRanker(self.id)
+
+    def __deepcopy__(self, memodict={}):
+        cypyobj = type(self)(self.title, self.text, self.codes, self.tags)
+        cypyobj.id = self.id
+        cypyobj.title = self.title
+        cypyobj.text = self.text
+        cypyobj.codes = copy.deepcopy(self.codes)
+        cypyobj.tags = copy.deepcopy(self.tags)
+
+        return cypyobj

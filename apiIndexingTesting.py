@@ -1,19 +1,38 @@
+import os
+
+import log
 import parser
 import models
 import indexer
+from starter import init, end
+import pickler
+import shared
 
-apiDoc = './dataset/API/raw/docs/api/java.base/java/io/BufferedInputStream.html'
+if __name__ == "__main__":
+    init()
 
-jsonDoc = parser.parse_API_doc_driver(apiDoc)
+    index_dict = dict()
+    api_list = os.listdir('./dataset/API/parsed/')
 
-docObject = models.APIDoc.from_json(jsonDoc)
+    ix = 0
+    for aj in api_list:
+        ix += 1
+        if ix % 500 == 0:
+            log.debug(f"Completed {ix}")
+            input()
 
-index = indexer.index_api_doc(docObject)
+        aj = os.path.join('./dataset/API/parsed', aj)
+        apiJson = None
+        with open(aj) as f:
+            apiJson = f.read()
 
-methods_index = index.methods_index
-print(index.combined_code_index.vector)
-# for method_index in methods_index:
-    # print(method_index.text_index.vector)
-    # print(method_index.code_index.vector)
+        docObject = models.APIDoc.from_json(apiJson)
 
-    # print('-----')
+        index = indexer.index_api_doc(docObject)
+
+        methods_index = index.methods_index
+        index_dict[docObject.name.snippet] = index
+
+    pickler.write_api_index(index_dict)
+    indexer.calculate_all_idf()
+    end()

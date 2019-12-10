@@ -1,5 +1,6 @@
 VECTOR_SPACE = dict()
 INDEXED_QUESTIONS = dict()
+INDEXED_APIS = dict()
 STOP_WORDS = []
 QUESTION_SEGMENT_MAP = dict()  # question_id vs segment_id
 API_SEGMENT_MAP = dict()
